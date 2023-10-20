@@ -28,11 +28,11 @@
 // [1] is the second 
 // [2] is the third...
 
-//{
-// let array = ["kishan", "jeegar", "sagar", "anil"];
+// {
+// let array = ["payal", "krupali", "vibhuti", "liza"];
 // console.log(array[2],array[2]);
-//}
-
+// }
+// 
 // {
 //     const array = [
 //         "one",
@@ -114,7 +114,13 @@
 // ---Array length ---
 // {
 //     const fruits = ["Banana", "Orange", "Apple", "Mango"];
-//     // let size = fruits.length;
+//     let size = fruits.length;
+//     console.log(fruits.length)
+// }
+
+// {
+//     const fruits = ["apple","mango" ,"banana"];
+//     let size = fruits.length;
 //     console.log(fruits.length)
 // }
 
@@ -197,8 +203,7 @@
 //     document.getElementById("demo").innerHTML = cars.join(" - ");
 // }
 
-// ---Array delete()--- 
-
+// // ---Array delete()--
 // Array elements can be deleted using the JavaScript operator delete.
 // Using delete leaves undefined holes in the array.
 // Use pop() or shift() instead.

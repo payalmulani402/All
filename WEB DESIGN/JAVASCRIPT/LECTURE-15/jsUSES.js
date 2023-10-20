@@ -62,3 +62,108 @@
 // Other popular JS gaming engines and libraries are GDevelop, melonJS, ImpactJS, BabylonJS, PhaserJS, PixiJS, PlayCanvas, A-Frame.
 // Some libraries even allow you to export your games into other platforms such as Android, iOS, etc.
 // Here is an image of a game developed in JavaScript.
+
+
+
+// reacte
+
+// (1)
+// {
+// let tea = "tea";
+// let coffee = "coffee";
+
+// let receipe = prompt("choice");
+// if(tea == receipe){
+
+//  document.write("It is one of the most popular hot beverages in world and especially in India. A cup of milk tea (chai) in morning gives refreshing feel and put you on track of long hard day. It can be prepared with milk or milk powder and various types of plain or flavored tea powders. This recipe prepares Indian tea using milk, sugar, tea powder and water.");
+// }
+
+// else if(tea == receipe){
+//     document.write("A cup of milk tea (chai) in morning gives refreshing feel and put you on track of long hard day. It can be prepared with milk or milk powder and various types of plain or flavored tea powders.")
+// }
+// else{
+//     document.write("wrong");
+// }
+// }
+
+
+
+// (1)
+// {
+// let coco ="coco";
+// let coffee = "coffee";
+
+// let receipe = prompt("choice");
+// if (coco == receipe) {
+// document.write("It is one of the most popular hot beverages in world and especially in India. A cup of milk tea (chai) in morning gives refreshing feel and put you on track of long hard day. It can be prepared with milk or milk powder and various types of plain or flavored tea powders. This recipe prepares Indian tea using milk, sugar, tea powder and water.");
+
+// }
+// else if (coffee == receipe){
+//     document.write("It is one of the most popular hot beverages in world and especially in India. A cup of milk tea (chai) in morning gives refreshing feel and put you on track of long hard day.")
+// }
+//     else{
+//         document.write("wrong");
+//     }
+
+// }
+// (1)
+// {
+//     let coco = "coco";
+//     let coffee = "coffee";
+
+//     let receipe = prompt ("choice");
+//     if (coco == receipe) {
+
+//         document.write("It is one of the most popular hot beverages in world and especially in India. A cup of milk tea (chai) in morning gives refreshing feel and put you on track of long hard day. It can be prepared with milk or milk powder and various types of plain or flavored tea powders. This recipe prepares Indian tea using milk, sugar, tea powder and water.");
+//     }
+
+//     else if (coffee == receipe){
+//         document.write("It is one of the most popular hot beverages in world and especially in India. A cup of milk tea (chai) in morning gives refreshing feel and put you on track of long hard day.")
+
+//     }
+//     else {
+//         document.write("wrong");
+//     }
+// }
+
+
+
+
+// (2)
+
+// {
+// let text;
+// let receipe = prompt("choice");
+// switch (receipe) {
+//     case "tea":
+//         text = "It is one of the most popular hot beverages in world and especially in India. A cup of milk tea (chai) in morning gives refreshing feel and put you on track of long hard day. It can be prepared with milk or milk powder and various types of plain or flavored tea powders. This recipe prepares Indian tea using milk, sugar, tea powder and water."
+
+//         break;
+//     case "coffee":
+//         text = "It is one of the most popular hot beverages in world and especially in India. A cup of milk tea (chai) in morning gives refreshing feel and put you on track of long hard day."
+//         break;
+//         default:
+//             text = "wrong";
+// }
+// document.write(text);
+
+// }
+
+// (2)
+
+{
+    let text;
+    let receipe = prompt("choice");
+    switch (receipe) {
+        case "tea":
+            text = "It is one of the most popular hot beverages in world and especially in India. A cup of milk tea (chai) in morning gives refreshing feel and put you on track of long hard day. It can be prepared with milk or milk powder and various types of plain or flavored tea powders. This recipe prepares Indian tea using milk, sugar, tea powder and water."
+            break;
+        case "coffee":
+            text = "It is one of the most popular hot beverages in world and especially in India. A cup of milk tea (chai) in morning gives refreshing feel and put you on track of long hard day."
+            break;
+            default:
+                text = "wrong";
+
+    }
+    document.write(text);
+}

@@ -10,10 +10,10 @@
 
 //     incorrect declaired
 
-//     var 123 =50;
-//     var *aa = 50;
-//     console.log(x);
-//     console.log(foo_fa1);
+    // var 123 =50;
+    // var *aa = 50;
+    // console.log(x);
+    // console.log(foo_fa1);
 
 //     NaN :- not a number
 // }

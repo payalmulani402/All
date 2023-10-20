@@ -59,7 +59,7 @@
 // {
 //     names="css"; 
 //     console.log(names);
-//     names="kishan";
+//     names="payal";
 //     console.log(names);
 
 //     var Names="website";
@@ -73,8 +73,8 @@
 //     var box1="colthes";
 //     var box1="toys";
 //     console.log(box1);
-// }
 
+// }
 // new html element add in though javascript
 // {
 //     var newelement=document.createElement("h6");
@@ -185,3 +185,17 @@
     // name must start with a letter (a to z or A to Z),underscore( _ ), or doller( $ ) sign.
     // after first letter we can use digits (0 to 9), for example value1.
     // javascript variables are case sensitive,  for example x and x are differnt variables.
+
+                                                                                     
+    function a(){
+        console.log("hello");
+    };
+    a();
+    
+{
+    const student= {
+        firsname:'ram',
+        class:10
+    };
+    console.log(student.class)
+}

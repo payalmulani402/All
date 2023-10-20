@@ -118,7 +118,7 @@
 //      console.log(entries);
 //  }
 
-// const person = {
+// const person1 = {
 //      name: 'Rakesh',
 //      city: 'Moscow',
 //      brand: 'apple',

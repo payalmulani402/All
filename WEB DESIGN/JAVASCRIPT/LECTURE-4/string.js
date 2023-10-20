@@ -53,27 +53,27 @@
 // }
 
 // -----string replace()----- 
-{
+// {
 //     function myFunction()
 //     {
 //         let a = document.getElementById("para-1").innerHTML;
 //         document.getElementById("para-1").innerHTML = a.replace("visit","skillqode");
 //     }
 
-    // i =   capital hoi ke small to pn change kri ne aape
+//     // i =   capital hoi ke small to pn change kri ne aape
 //     {
 //         let a = "please visit MicrOsoft microsoft microsoft";
 //         let chnage = a.replace(/microSoft/i, "skillqode");
 //         document.write(chnage)
 //     }
 
-    // g = words bdhi j jgya a change kri ne aapse 
+//     // g = words bdhi j jgya a change kri ne aapse 
 //     {
 //         let a = "please visit skillqode visit and visit again";
-//         let chnage = a.replace(/visit/g, "kishan");
+//         let chnage = a.replace(/visit/g, "payal");
 //         document.write(chnage)
 //     }
-}
+// }
 
 // -----string replaceAll()-----
 // {
@@ -101,8 +101,8 @@
 
 // -----string concat()----- 
 // {
-//     let str1 = "kishan";
-//     let str2 = "bhalala";
+//     let str1 = "payal";
+//     let str2 = "mulani";
 //     let a = str1.concat(" ",str2);
 //     let b = a.length;
 //     document.write(a +  "<br>");
@@ -117,19 +117,19 @@
 // }
 
 // -----string trimStart()----- 
-//     {
-//         let a = "       this is javascript                          ";
-//         let b = a.trimStart();
-//         console.log(b);
-//     }
+    // {
+    //     let a = "       this is javascript                          ";
+    //     let b = a.trimStart();
+    //     console.log(b);
+    // }
 
 
 // -----string trimEnd()----- 
-//     {
-//         let a = "       this is javascript            ";
-//         let b = a.trimEnd();
-//         console.log(b);
-//     }
+    // {
+    //     let a = "       this is javascript            ";
+    //     let b = a.trimEnd();
+    //     console.log(b);
+    // }
 
 
 // -----string padStart()----- 
@@ -177,7 +177,7 @@
 
 // -----string split()----- 
 // {
-//     let a = "kishan";
+//     let a = "payal";
 //     const arr = a.split("");
 
 //     a = "";
@@ -213,7 +213,7 @@
 //     let part = fruits.indexOf("w");
 //     console.log(part);
 // }
-
+// 
 // {
 //     let fruits = "apple, mango, watermalon, strawbarry, lemon";
 //     let part = fruits.indexOf("o",12);

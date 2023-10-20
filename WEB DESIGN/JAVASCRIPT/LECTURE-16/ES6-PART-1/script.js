@@ -212,7 +212,7 @@
 
 // const keyName = "name"
 
-// const product = {
+// const product1 = {
 //      buy(){
 //           console.log("hello");
 //      }
@@ -269,7 +269,7 @@
 /* javascript Array */ 
 
 // const data = ['Rakesh', 30, 'Engineer'];
-// console.log(data[0]);
+// console.log(data[2]);
 
 /* Declarative Way */
 
@@ -282,4 +282,4 @@
 /* In Use React */
 // const data = ['Rakesh', 30, 'Engineer'];
 // const [name, age, profession] = data;
-// const [count, setCount] = useState();
+// const [count, setCount] = useState();  

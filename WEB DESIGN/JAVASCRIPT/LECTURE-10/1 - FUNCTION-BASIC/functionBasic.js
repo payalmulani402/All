@@ -34,7 +34,7 @@ JavaScript also has a huge number of inbuilt functions. For example, Math.sqrt()
 //     // declaring a function named greet()
 //     function greet()
 //     {
-//         document.write("hi i am kishan")
+//         document.write("hi i am payal")
 //     }
 //     // function call
 //     greet();
@@ -45,16 +45,16 @@ JavaScript also has a huge number of inbuilt functions. For example, Math.sqrt()
 
 // A function can also be declared with parameters. A parameter is a value that is passed when declaring a function.
 
-// {
-//     function greet(name)
-//     {
-//         console.log("hello " + name );
-//     };
-//     let name = prompt("enter the name : ");
+{
+    function greet(name)
+    {
+        console.log("hello " + name );
+    };
+    let name = prompt("enter the name : ");
 
-//     greet(name);
+    greet(name);
 
-// }
+}
 
 // --- 2.Add two number ---
 

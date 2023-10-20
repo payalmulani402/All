@@ -15,27 +15,20 @@
 //         firstName: 'ram',
 //         class: 10
 //     };
-//// console.log(student.firstName);
+// console.log(student.firstName);
 // }
 
 // --- JavaScript Object Declaration --- 
 
 // {
-//     const object_name = {
-//         key1: "value1",
-//         key2: "value2"
-//     };
-//// console.log(object_name);
-// }
-
 // --- object creation --- 
-{
-    // const person = { 
-    //     name: 'John',
-    //     age: 20
-    // };
-    // console.log(typeof person); 
-}
+// {
+//     const person = { 
+//         name: 'John',
+//         age: 20
+//     };
+//     console.log(typeof person); 
+// }
 
 
 // ***** JavaScript Object Properties *****
@@ -61,13 +54,13 @@
 }
 // For example,
 {
-    // const person = { 
-    //     name: 'John', 
-    //     age: 20, 
-    // };
+//     const person = { 
+//         name: 'John', 
+//         age: 20, 
+//     };
 
-    // // accessing property
-    // console.log(person.age); 
+//     // accessing property
+//     console.log(person.age); 
 }
 
 // 2. Using bracket Notation
@@ -94,7 +87,7 @@
 
 // {
 //     const obj = {
-//         name : "kishan",
+//         name : "payal",
 //         age : 25,
 
 //         cars : {
@@ -103,10 +96,10 @@
 //             c3 : "jaguar",
 
 //             person :{
-//                 n1 : "jeegar",
-//                 n2 : "urvesh",
-//                 n3 : "prashant",
-//                 n4 : "jenish",
+//                 n1 : "meena",
+//                 n2 : "amisha",
+//                 n3 : "nisha",
+//                 n4 : "jenisha",
 //             }
 //         }
 //     }
@@ -167,7 +160,7 @@
 // {
 //     //  create source object
 //     const obj = {
-//         name: "kishan bhalala",
+//         name: "payal mulani",
 //         age: 25,
 //     };
 
@@ -192,7 +185,7 @@
 
 // {
 //     let student = {
-//         name: "kishan",
+//         name: "payal",
 //         age: 25,
 //         mark:88.9,
 //         display(){
@@ -202,7 +195,7 @@
 
 //     // create object from Student prototype
 //     let std1 = Object.create(student);
-//     std1.name = "jeegar";
+//     std1.name = "krupali";
 //     std1.display();
 // }
 
@@ -210,11 +203,11 @@
 
 // returns properties in key-value format:-
 // {
-//     const obj = { name: "kishan", age: 20, location: "india" };
+//     const obj = { name: "payal", age: 20, location: "india" };
 //     console.log(Object.entries(obj)); 
 // }
 
-// keys are arranged randomly:-
+// // keys are arranged randomly:-
 // {
 //     const obj = { 42: "a", 22: "b", 71: "c" };
 
@@ -224,7 +217,7 @@
 //     console.log(Object.entries(obj));
 // }
 
-// entries() to Iterate Through Key-Value Pairs:-
+// // entries() to Iterate Through Key-Value Pairs:-
 // {
 //     const obj = { name: "John", age: 27, location: "Nepal" };
 
@@ -335,7 +328,7 @@
 //       // cannot add a new property 
 //       obj.new_foo = "bar";
 //       console.log(obj.new_foo); 
-// }
+// }  
 
 
 // 7. --- JavaScript Object.getOwnPropertyNames() ---
@@ -343,8 +336,8 @@
 
 // {
 //      const obj = {
-//          name: "kishan",
-//          age: 32,
+//          name: "payal",
+//          age: 22,
 //          address: "",
 //        };
 
@@ -393,12 +386,9 @@
 // 10. --- JavaScript Object.valueOf() --- 
 // The Object.valueOf() method returns the primitive value of the specified object.
 
-// {
-//     // create a new Number object with value of 12
-//     let num = new Number(12);
-//     console.log(num);
-//     console.log(num.valueOf());
-// }
+{
+    // create a new Number object with value of 12/
+}
 
 
 // 11. --- JavaScript Object.values() ---
@@ -478,3 +468,16 @@
 //     document.write(a.fees() + "<br>");
 //     document.write(a.fullname());
 // }
+// function a() {
+//     console.log("payal mulani");
+// };
+// a();
+
+obj 
+{   
+const student = {
+    firsname:'ram',
+    class:10
+};
+console.log (student.class)
+}
