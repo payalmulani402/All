@@ -6,17 +6,16 @@
     <title>Table 7</title>
     <style>
         body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          overflow: hidden;
         }
         table,
         th,
         td {    
-            border: 2px solid green;
-            /* border-collapse: collapse; */    
+            border: 2px solid green; 
             text-align: center;
             width: 200px;
             height: 50px;
@@ -40,27 +39,29 @@
 
 <body>
     <table class="table-1">
-        <tbody>
-            <tr>
-                <th>Table 1</th>
-                <th>Table 1 <br>
-                    <table class="table-2">
-                        <tr>
-                            <th class="inner">Table 2</th>
-                            <th class="inner">Table 2</th>
-                        </tr>
-                        <tr>
-                            <th class="inner">Table 2</th>
-                            <th class="inner">Table 2</th>
-                        </tr>
-                    </table>
-                </th>
-            </tr>
-            <tr>
-                <th>Table 1</th>
-                <th>Table 1</th>
-            </tr>
-        </tbody>
+       <tbody>
+        <tr>
+            <th>Tabel 1</th>
+            <th>Tabel 1 <br>
+                <table class="table-2">
+                    <tr>
+                        <th>Table1</th>
+                        <th>Table2</th>
+                    </tr>
+                    <tr>
+                       <th class="inner">Table2</th>
+                       <th class="inner">Table2</th>
+                    </tr>
+                </table>
+
+            </th>
+            
+        </tr>
+        <tr>
+            <th>Table1</th>
+            <th>Table1</th>
+        </tr>
+       </tbody>
     </table>
 </body>
 

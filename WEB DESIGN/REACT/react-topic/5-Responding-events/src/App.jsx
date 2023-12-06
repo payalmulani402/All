@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ClickOn1 from './Events/ClickOn1'
+import P2 from './Events/P2'
 // import ClickOn2 from './Events/ClickOn2'
 // import ClickOn3 from './Events/ClickOn3'
 // import ClickOn4 from './Events/ClickOn4'
@@ -15,13 +16,14 @@ function App() {
 
   return (
     <>
-      <ClickOn1/>
+      {/* <ClickOn1/> */}
       {/* <ClickOn2 /> */}
       {/* <ClickOn3 /> */}
       {/* <ClickOn4 /> */}
       {/* <ClickOn5/> */}
       {/* <ClickOn6 /> */}
       {/* <Prac1/> */}
+      <P2/>
     </>
   )
 }

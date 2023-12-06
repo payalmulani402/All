@@ -11,22 +11,22 @@ const MultiStates = () => {
         setage(age + 1)
     }
     function box2() {
-        setname("kishan")
+        setname("payal")
     }
     function box3() {
-        setname1("jeegar")
+        setname1("komal")
     }
     function box4() {
-        settodos("smart jeegar!")
-        settodos("intelligent kishan!")
+        settodos("smart komal!")
+        settodos("intelligent payal!")
         settodos("clever sagar!")
     }
 
     function Reset() {
         setage(20)
-        setname("urvesh")
-        setname1("jenish")
-        settodos("hensome boy")
+        setname("urvish")
+        setname1("jeni")
+        settodos("hensome beby")
     }
 
     return (

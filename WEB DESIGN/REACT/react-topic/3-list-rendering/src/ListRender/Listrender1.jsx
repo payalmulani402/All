@@ -1,14 +1,14 @@
 import React from 'react'
 
 const List = [
-    'kishan bhalala',
-    'jeegar bhalala',
-    'sagar bhalala',
-    'urvesh kordiya',
-    'prashant surani',
-    'jenish shiyani',
-    'mehul parmar',
-    'ravi savaliya'
+    'payal mulani',
+    'kirshana bhalala',
+    'daya bhalala',
+    'komal kordiya',
+    'kushi surani',
+    'jeni shiyani',
+    'mahi parmar',
+    'ravina savaliya'
 ]
 
 const Listrender1 = () => {

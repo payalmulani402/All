@@ -12,7 +12,7 @@ const Item = ({Update}) => {
 const Render1 = () => {
   return (
     <div>
-      <Item Update = "Kishan bhalala"/>
+      <Item Update = "payal mulani"/>
     </div>
   )
 }

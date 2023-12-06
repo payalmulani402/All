@@ -4,6 +4,7 @@ import Countstates from "./practice/Countstates"
 import MultiStates from "./UseState/MultiStates"
 import Input from "./practice/Input"
 import CheckBox from "./practice/CheckBox"
+import P1 from "./P1"
 
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
         
         {/* <MultiStates/> */}
 
-        <Input/>
+        {/* <Input/> */}
 
-        <CheckBox/>
+        {/* <CheckBox/> */}
+        <P1/>
       </div>
     </>
   )

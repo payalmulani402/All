@@ -1,6 +1,5 @@
 import React from 'react'
 import { useEffect } from 'react'
-import { useState } from 'react'
 
 const Task1 = () => {
     const [val, setval] = useState()
@@ -27,4 +26,5 @@ const Task1 = () => {
 }
 
 export default Task1
+
 
