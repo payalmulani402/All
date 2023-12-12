@@ -93,7 +93,7 @@ const Contact = () => {
 
                     </div>
                     <div>
-                        <iframe class="w-full h-[500px] rounded-lg" src="https://maps.google.com/maps?q=melbourne&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                        <iframe className="w-full h-[500px] rounded-lg" src="https://maps.google.com/maps?q=melbourne&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
                     </div>
                 </section>
 

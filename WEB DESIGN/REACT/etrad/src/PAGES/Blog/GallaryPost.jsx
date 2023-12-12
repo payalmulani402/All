@@ -3,6 +3,7 @@ import { AllTopBar } from '../../Components/AllDropdown/AllDropdownHover'
 import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import SubscribePhoto from '../../Components/SubscribePhoto'
 import Footer from '../../Components/Footer/Footer'
+import { Link } from 'react-router-dom'
 
 const GallaryPost = () => {
     return (
@@ -166,28 +167,28 @@ const GallaryPost = () => {
                                     <h1 className='text-[#292930] text-xl font-medium mb-8'>Latest Posts</h1>
                                     <div className='flex  border-b border-gray-100 pb-5'>
                                         <div className='rounded-lg overflow-hidden'>
-                                            <img className='bg-cover rounded-lg h-20 w-[170px] hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 9.png" alt="" />
+                                           <Link to ="/Standard Post"> <img className='bg-cover rounded-lg h-20 w-[170px] hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 9.png" alt="" /></Link>
                                         </div>
                                         <div className='ml-10'>
-                                            <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Dubai’s FRAME Offers its Take on the</a>
+                                            <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Dubai’s FRAME Offers its Take on the</Link>
                                             <h1 className='text-sm text-gray-500 mt-3'>Mar 27, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
                                         </div>
                                     </div>
                                     <div className='flex  border-b border-gray-100 py-5'>
                                         <div className='rounded-lg overflow-hidden'>
-                                            <img className='bg-cover rounded-lg h-20 w-[188px] hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 10.png" alt="" />
+                                           <Link to="/Standard Post"> <img className='bg-cover rounded-lg h-20 w-[188px] hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 10.png" alt="" /></Link>
                                         </div>
                                         <div className='ml-10'>
-                                            <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Apple presents App Best of 2020 winners</a>
+                                            <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Apple presents App Best of 2020 winners</Link>
                                             <h1 className='text-sm text-gray-500 mt-3'>Mar 20, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
                                         </div>
                                     </div>
                                     <div className='flex pt-5'>
                                         <div className='rounded-lg overflow-hidden'>
-                                            <img className='bg-cover rounded-lg h-20 w-[200px] hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 11.png" alt="" />
+                                           <Link to="/Standard Post"> <img className='bg-cover rounded-lg h-20 w-[200px] hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 11.png" alt="" /></Link>
                                         </div>
                                         <div className='ml-10'>
-                                            <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Gallaudet University innovation in education</a>
+                                            <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Gallaudet University innovation in education</Link>
                                             <h1 className='text-sm text-gray-500 mt-3'>Mar 15, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
                                         </div>
                                     </div>
@@ -197,28 +198,28 @@ const GallaryPost = () => {
                                     <h1 className='text-[#292930] text-xl font-medium mb-8'>Recent Viewed Products</h1>
                                     <div className='flex border-b border-gray-100 pb-5 '>
                                         <div className='rounded-lg overflow-hidden'>
-                                            <img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 12.jpeg" alt="" />
+                                           <Link to="/Standard Post"> <img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 12.jpeg" alt="" /></Link>
                                         </div>
                                         <div className='ml-10 mt-3'>
-                                            <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Men's Fashion Tshirt</a>
+                                            <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Men's Fashion Tshirt</Link>
                                             <h1 className='text-lg font-semibold text-gray-300 mt-3'>$30 <span className='text-gray-700 ml-3'>$20</span></h1>
                                         </div>
                                     </div>
                                     <div className='flex border-b border-gray-100 py-5 '>
                                         <div className='rounded-lg overflow-hidden'>
-                                            <img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 13.jpeg" alt="" />
+                                           <Link to="/Standard Post"> <img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 13.jpeg" alt="" /></Link>
                                         </div>
                                         <div className='ml-10 mt-3'>
-                                            <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Nike Shoes</a>
+                                            <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Nike Shoes</Link>
                                             <h1 className='text-lg font-semibold text-gray-300 mt-3'>$200 <span className='text-gray-700 ml-3'>$150</span></h1>
                                         </div>
                                     </div>
                                     <div className='flex pt-5 '>
                                         <div className='rounded-lg overflow-hidden'>
-                                            <img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 14.jpeg" alt="" />
+                                           <Link to="/Standard Post"> <img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/gallery-post/asset 14.jpeg" alt="" /></Link>
                                         </div>
                                         <div className='ml-10 mt-3'>
-                                            <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Addidas Shoes</a>
+                                            <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Addidas Shoes</Link>
                                             <h1 className='text-lg font-semibold text-gray-300 mt-3'>$300 <span className='text-gray-700 ml-3'>$200</span></h1>
                                         </div>
                                     </div>

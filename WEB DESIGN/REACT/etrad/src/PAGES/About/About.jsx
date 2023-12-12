@@ -4,7 +4,7 @@ import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import Speaker from '../../Components/Speaker'
 import SubscribePhoto from '../../Components/SubscribePhoto'
 import Footer from '../../Components/Footer/Footer'
-
+import { Link } from 'react-router-dom'
 const About = () => {
     return (
         <>
@@ -133,7 +133,7 @@ const About = () => {
                                     <h1 className='text-gray-500 text-sm mb-2'>Features #01</h1>
                                     <h1 className='text-4xl font-bold text-[#27272E] mb-6'>Solutions that work together</h1>
                                     <p className='text-gray-500 text-sm leading-6'>Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.</p>
-                                    <button className="border px-11 py-5 rounded-md font-semibold mt-8 text-[#27272E]  hover:bg-[#3577F0] hover:text-white duration-500">Get In Touch</button>
+                                   <Link to="/Contact"> <button className="border px-11 py-5 rounded-md font-semibold mt-8 text-[#27272E]  hover:bg-[#3577F0] hover:text-white duration-500">Get In Touch</button></Link>
                                 </div>
                             </div>
 
@@ -142,7 +142,7 @@ const About = () => {
                                     <h1 className='text-gray-500 text-sm mb-2'>Features #01</h1>
                                     <h1 className='text-4xl font-bold text-[#27272E] mb-6'>Solutions that work together</h1>
                                     <p className='text-gray-500 text-sm leading-6'>Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.</p>
-                                    <button className="border px-11 py-5 rounded-md font-semibold mt-8 text-[#27272E]  hover:bg-[#3577F0] hover:text-white duration-500">Get In Touch</button>
+                                    <Link to="/Contact"><button className="border px-11 py-5 rounded-md font-semibold mt-8 text-[#27272E]  hover:bg-[#3577F0] hover:text-white duration-500">Get In Touch</button></Link>
                                 </div>
                                 <div className='w-[100%] flex justify-end'>
                                     <img className='rounded-lg w-[85%]' src="../src/assets/about/asset 12.png" alt="" />

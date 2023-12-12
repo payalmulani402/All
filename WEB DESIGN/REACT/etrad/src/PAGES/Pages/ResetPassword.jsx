@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ResetPassword = () => {
     return (
@@ -11,7 +12,7 @@ const ResetPassword = () => {
                     </span>
                     <div className='flex items-center text-[#292930] font-medium text-sm'>
                         <p>Already a member?</p>
-                        <a href="#" className="hover:text-[#3577F0]">Sign In</a>
+                        <Link to="/SignIn" href="#" className="hover:text-[#3577F0]">Sign In</Link>
                     </div>
                 </div>
 
@@ -31,12 +32,12 @@ const ResetPassword = () => {
                    
                     <div className='relative text-gray-500  mt-5'>
                         <label className='absolute -top-3 left-7 bg-white px-2 font-semibold text-sm'>New Password</label>
-                        <input type="password" placeholder='*********' className='border border-gray-300 w-[400px] px-9 py-5 rounded-md font-normal focus:outline-blue-400' />
+                        <input type="password" placeholder='..........' className='border border-gray-300 w-[400px] px-9 py-5 rounded-md font-normal focus:outline-blue-400' />
                     </div>
 
                     <div className='relative text-gray-500  mt-8'>
                         <label className='absolute -top-3 left-7 bg-white px-2 font-semibold text-sm'>Confirm Password</label>
-                        <input type="password" placeholder='*********' className='border border-gray-300 w-[400px] px-9 py-5 rounded-md font-normal focus:outline-blue-400' />
+                        <input type="password" placeholder='..........' className='border border-gray-300 w-[400px] px-9 py-5 rounded-md font-normal focus:outline-blue-400' />
                     </div>
 
 

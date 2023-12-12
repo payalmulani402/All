@@ -3,6 +3,7 @@ import React from 'react'
 import { AllTopBar } from '../../Components/AllDropdown/AllDropdownHover'
 import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import Footer from '../../Components/Footer/Footer'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
     return (
@@ -40,8 +41,9 @@ const Cart = () => {
                             </div>
 
                             <div>
+                            <Link to="/ProductV1">
                                 <div className="flex justify-between py-4 items-center border-b-2 border-gray-100">
-                                    <i class="fa-solid fa-xmark text-xs w-8 h-8 rounded-full bg-[#F6F7FB] text-center leading-7 ml-4 cursor-pointer hover:border-[#3577F0] hover:ring-2 duration-300 "></i>
+                                    <i className="fa-solid fa-xmark text-xs w-8 h-8 rounded-full bg-[#F6F7FB] text-center leading-7 ml-4 cursor-pointer hover:border-[#3577F0] hover:ring-2 duration-300 "></i>
                                     <img className="h-20 w-20 -mx-32 cursor-pointer" src="./src/assets/pages/wishlist/asset 2.png"></img>
                                     <p className="text-xl w-56 font-semibold text-[#292930] hover:text-[#3577F0] cursor-pointer duration-300">
                                         Wireless PS Handler
@@ -54,6 +56,9 @@ const Cart = () => {
                                     </div>
                                     <p className="mr-16 text-gray-500 font-semibold text-xl">$275.00</p>
                                 </div>
+                                </Link>
+                                
+                                 <Link to="/ProductV2">
                                 <div className="flex justify-between py-4 items-center border-b-2 border-gray-100">
                                     <i class="fa-solid fa-xmark text-xs w-8 h-8 rounded-full bg-[#F6F7FB] text-center leading-7 ml-4 cursor-pointer hover:border-[#3577F0] hover:ring-2 duration-300 "></i>
                                     <img className="h-20 w-20 -mx-32 cursor-pointer" src="./src/assets/pages/wishlist/asset 3.png"></img>
@@ -68,8 +73,10 @@ const Cart = () => {
                                     </div>
                                     <p className="mr-16 text-gray-500 font-semibold text-xl">$275.00</p>
                                 </div>
+                                </Link>
+                                <Link to="/ProductV3">
                                 <div className="flex justify-between py-4 items-center border-b-2 border-gray-100">
-                                    <i class="fa-solid fa-xmark text-xs w-8 h-8 rounded-full bg-[#F6F7FB] text-center leading-7 ml-4 cursor-pointer hover:border-[#3577F0] hover:ring-2 duration-300 "></i>
+                                    <i className="fa-solid fa-xmark text-xs w-8 h-8 rounded-full bg-[#F6F7FB] text-center leading-7 ml-4 cursor-pointer hover:border-[#3577F0] hover:ring-2 duration-300 "></i>
                                     <img className="h-20 w-20 -mx-32 cursor-pointer" src="./src/assets/pages/wishlist/asset 4.png"></img>
                                     <p className="text-xl w-56 font-semibold text-[#292930] hover:text-[#3577F0] cursor-pointer duration-300">
                                         HD CC Camera
@@ -82,6 +89,7 @@ const Cart = () => {
                                     </div>
                                     <p className="mr-16 text-gray-500 font-semibold text-xl">$275.00</p>
                                 </div>
+                            </Link>
                             </div>
                         </div>
 
@@ -133,7 +141,7 @@ const Cart = () => {
                                     <h1 className='text-xl font-bold text-[#3577F0]'>$125.00</h1>
                                 </div>
                                 <div className='relative text-center w-full py-5 rounded-md text-white font-bold z-10'>
-                                    <a href="" className='
+                                    <Link to="/Checkout" href="" className='
                                     before:absolute
                                     before:content-[""]
                                     before:bg-[#3577F0]
@@ -145,7 +153,7 @@ const Cart = () => {
                                     before:duration-300
                                     before:rounded-md
                                     before:-z-10
-                                      '>Process to Checkout</a>
+                                      '>Process to Checkout</Link>
                                 </div>
                             </div>
                         </div>

@@ -4,7 +4,16 @@
     border: 1px solid black;
     padding: 5px;
     text-align: center;
-    width: calc(100% - 100px);
+    width: calc(100vw - 100px);
     margin: auto;
+    font-size: calc(4vw - 10px);
+
+}
+.img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    text-align: center;
+    width: calc(100vw - 100px);    
 
 }

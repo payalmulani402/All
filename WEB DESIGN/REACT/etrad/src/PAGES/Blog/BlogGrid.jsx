@@ -5,6 +5,7 @@ import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import SubscribePhoto from '../../Components/SubscribePhoto'
 import Footer from '../../Components/Footer/Footer'
 import Speaker from '../../Components/Speaker'
+import { Link } from 'react-router-dom'
 
 const BlogGrid = () => {
     return (
@@ -33,7 +34,7 @@ const BlogGrid = () => {
                             <div className='grid grid-cols-2 gap-12'>
                                 <div className='BOX-1 border p-5 rounded-lg relative group'>
                                     <div className='mb-5 overflow-hidden rounded-md'>
-                                        <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 3.png" alt="" />
+                                      <Link to="/Standard Post"><img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 3.png" alt="" /></Link>  
                                         <h2 className='absolute top-52 right-10 text-sm text-white cursor-pointer'
                                             style={{
                                                 backgroundColor: "rgba(255,255,255,.5)",
@@ -46,10 +47,10 @@ const BlogGrid = () => {
                                         </h2>
                                     </div>
                                     <div className='mb-5'>
-                                        <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Keeping yourself safe when buying NFTs on eTrade</h1>
+                                       <Link to ="/Standard Post"><h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Keeping yourself safe when buying NFTs on eTrade</h1></Link> 
                                     </div>
                                     <div className='relative inline-block'>
-                                        <a className='before:absolute
+                                        <Link to="/Standard Post" className='before:absolute
                                                    duration-500
                                                    before:content-[""]
                                                    before:w-0
@@ -65,13 +66,13 @@ const BlogGrid = () => {
                                                    hover:text-[#3577F0] 
                                                    font-semibold 
                                                    text-base'
-                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></a>
+                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></Link>
                                     </div>
                                 </div>
 
                                 <div className='BOX-2 border p-5 rounded-lg relative group'>
                                     <div className='mb-5 overflow-hidden rounded-md'>
-                                        <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 4.png" alt="" />
+                                        <Link to="/Standard Post"></Link><img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 4.png" alt="" />
                                         <h2 className='absolute top-52 right-10 text-sm text-white cursor-pointer'
                                             style={{
                                                 backgroundColor: "rgba(255,255,255,.5)",
@@ -84,10 +85,10 @@ const BlogGrid = () => {
                                         </h2>
                                     </div>
                                     <div className='mb-5'>
-                                        <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Important updates for listing and delisting your NFTs</h1>
+                                    <Link to="/Standard Post">  <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Important updates for listing and delisting your NFTs</h1></Link>
                                     </div>
                                     <div className='relative inline-block'>
-                                        <a className='before:absolute
+                                        <Link to ="/Standard Post" className='before:absolute
                                                    duration-500
                                                    before:content-[""]
                                                    before:w-0
@@ -103,14 +104,14 @@ const BlogGrid = () => {
                                                    hover:text-[#3577F0] 
                                                    font-semibold 
                                                    text-base'
-                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></a>
+                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></Link>
                                     </div>
                                 </div>
 
 
                                 <div className='BOX-3 border p-5 rounded-lg relative group'>
                                     <div className='mb-5 overflow-hidden rounded-md'>
-                                        <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 5.png" alt="" />
+                                       <Link to="/Standard Post"> <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 5.png" alt="" /></Link>
                                         <h2 className='absolute top-52 right-10 text-sm text-white cursor-pointer'
                                             style={{
                                                 backgroundColor: "rgba(255,255,255,.5)",
@@ -123,10 +124,10 @@ const BlogGrid = () => {
                                         </h2>
                                     </div>
                                     <div className='mb-5'>
-                                        <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>10 tips for avoiding scams and staying safe on the decentralized web</h1>
+                                       <Link to="/Standard Post"> <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>10 tips for avoiding scams and staying safe on the decentralized web</h1></Link>
                                     </div>
                                     <div className='relative inline-block'>
-                                        <a className='before:absolute
+                                        <Link to="/Standard Post" className='before:absolute
                                                    duration-500
                                                    before:content-[""]
                                                    before:w-0
@@ -142,13 +143,13 @@ const BlogGrid = () => {
                                                    hover:text-[#3577F0] 
                                                    font-semibold 
                                                    text-base'
-                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></a>
+                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></Link>
                                     </div>
                                 </div>
 
                                 <div className='BOX-4 border p-5 rounded-lg relative group'>
                                     <div className='mb-5 overflow-hidden rounded-md'>
-                                        <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 3.png" alt="" />
+                                       <Link to="/Standard Post"> <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 3.png" alt="" /></Link>
                                         <h2 className='absolute top-52 right-10 text-sm text-white cursor-pointer'
                                             style={{
                                                 backgroundColor: "rgba(255,255,255,.5)",
@@ -161,10 +162,10 @@ const BlogGrid = () => {
                                         </h2>
                                     </div>
                                     <div className='mb-5'>
-                                        <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Keeping yourself safe when buying NFTs on eTrade</h1>
+                                      <Link to="/Standard Post">  <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Keeping yourself safe when buying NFTs on eTrade</h1></Link>
                                     </div>
                                     <div className='relative inline-block'>
-                                        <a className='before:absolute
+                                        <Link to="/Standard Post" className='before:absolute
                                                    duration-500
                                                    before:content-[""]
                                                    before:w-0
@@ -180,13 +181,13 @@ const BlogGrid = () => {
                                                    hover:text-[#3577F0] 
                                                    font-semibold 
                                                    text-base'
-                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></a>
+                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></Link>
                                     </div>
                                 </div>
 
                                 <div className='BOX-5 border p-5 rounded-lg relative group'>
                                     <div className='mb-5 overflow-hidden rounded-md'>
-                                        <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 4.png" alt="" />
+                                       <Link to="/Standard Post"><img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 4.png" alt="" /></Link> 
                                         <h2 className='absolute top-52 right-10 text-sm text-white cursor-pointer'
                                             style={{
                                                 backgroundColor: "rgba(255,255,255,.5)",
@@ -199,10 +200,10 @@ const BlogGrid = () => {
                                         </h2>
                                     </div>
                                     <div className='mb-5'>
-                                        <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Important updates for listing and delisting your NFTs</h1>
+                                       <Link to="/Standard Post"><h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Important updates for listing and delisting your NFTs</h1></Link>
                                     </div>
                                     <div className='relative inline-block'>
-                                        <a className='before:absolute
+                                        <Link to ="/Standard Post" className='before:absolute
                                                    duration-500
                                                    before:content-[""]
                                                    before:w-0
@@ -218,14 +219,14 @@ const BlogGrid = () => {
                                                    hover:text-[#3577F0] 
                                                    font-semibold 
                                                    text-base'
-                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></a>
+                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></Link>
                                     </div>
                                 </div>
 
 
                                 <div className='BOX-6 border p-5 rounded-lg relative group'>
                                     <div className='mb-5 overflow-hidden rounded-md'>
-                                        <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 5.png" alt="" />
+                                        <Link to="/Standard Post"><img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 5.png" alt="" /></Link>
                                         <h2 className='absolute top-52 right-10 text-sm text-white cursor-pointer'
                                             style={{
                                                 backgroundColor: "rgba(255,255,255,.5)",
@@ -238,10 +239,10 @@ const BlogGrid = () => {
                                         </h2>
                                     </div>
                                     <div className='mb-5'>
-                                        <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>10 tips for avoiding scams and staying safe on the decentralized web</h1>
+                                       <Link to="/Standard Post"> <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>10 tips for avoiding scams and staying safe on the decentralized web</h1></Link>
                                     </div>
                                     <div className='relative inline-block'>
-                                        <a className='before:absolute
+                                        <Link to="/Standard Post" className='before:absolute
                                                    duration-500
                                                    before:content-[""]
                                                    before:w-0
@@ -257,13 +258,13 @@ const BlogGrid = () => {
                                                    hover:text-[#3577F0] 
                                                    font-semibold 
                                                    text-base'
-                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></a>
+                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></Link>
                                     </div>
                                 </div>
 
                                 <div className='BOX-7 border p-5 rounded-lg relative group'>
                                     <div className='mb-5 overflow-hidden rounded-md'>
-                                        <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 3.png" alt="" />
+                                       <Link to ="/Standard Post"><img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 3.png" alt="" /></Link> 
                                         <h2 className='absolute top-52 right-10 text-sm text-white cursor-pointer'
                                             style={{
                                                 backgroundColor: "rgba(255,255,255,.5)",
@@ -276,10 +277,10 @@ const BlogGrid = () => {
                                         </h2>
                                     </div>
                                     <div className='mb-5'>
-                                        <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Keeping yourself safe when buying NFTs on eTrade</h1>
+                                        <Link to="/Standard Post"><h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Keeping yourself safe when buying NFTs on eTrade</h1></Link>
                                     </div>
                                     <div className='relative inline-block'>
-                                        <a className='before:absolute
+                                        <Link to="/Standard Post" className='before:absolute
                                                    duration-500
                                                    before:content-[""]
                                                    before:w-0
@@ -295,13 +296,13 @@ const BlogGrid = () => {
                                                    hover:text-[#3577F0] 
                                                    font-semibold 
                                                    text-base'
-                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></a>
+                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></Link>
                                     </div>
                                 </div>
 
                                 <div className='BOX-8 border p-5 rounded-lg relative group'>
                                     <div className='mb-5 overflow-hidden rounded-md'>
-                                        <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 4.png" alt="" />
+                                        <Link to ="/Standard Post"><img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 4.png" alt="" /></Link>
                                         <h2 className='absolute top-52 right-10 text-sm text-white cursor-pointer'
                                             style={{
                                                 backgroundColor: "rgba(255,255,255,.5)",
@@ -314,10 +315,10 @@ const BlogGrid = () => {
                                         </h2>
                                     </div>
                                     <div className='mb-5'>
-                                        <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Important updates for listing and delisting your NFTs</h1>
+                                       <Link to="/Standard Post"> <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Important updates for listing and delisting your NFTs</h1></Link>
                                     </div>
                                     <div className='relative inline-block'>
-                                        <a className='before:absolute
+                                        <Link to="/Standard Post" className='before:absolute
                                                    duration-500
                                                    before:content-[""]
                                                    before:w-0
@@ -333,13 +334,13 @@ const BlogGrid = () => {
                                                    hover:text-[#3577F0] 
                                                    font-semibold 
                                                    text-base'
-                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></a>
+                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></Link>
                                     </div>
                                 </div>
 
                                 <div className='BOX-9 border p-5 rounded-lg relative group'>
                                     <div className='mb-5 overflow-hidden rounded-md'>
-                                        <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 3.png" alt="" />
+                                       <Link to="/Standard Post"> <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 3.png" alt="" /></Link>
                                         <h2 className='absolute top-52 right-10 text-sm text-white cursor-pointer'
                                             style={{
                                                 backgroundColor: "rgba(255,255,255,.5)",
@@ -352,10 +353,10 @@ const BlogGrid = () => {
                                         </h2>
                                     </div>
                                     <div className='mb-5'>
-                                        <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Keeping yourself safe when buying NFTs on eTrade</h1>
+                                       <Link to="/Standard Post"> <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Keeping yourself safe when buying NFTs on eTrade</h1></Link>
                                     </div>
                                     <div className='relative inline-block'>
-                                        <a className='before:absolute
+                                        <Link to="/Standard Post" className='before:absolute
                                                    duration-500
                                                    before:content-[""]
                                                    before:w-0
@@ -371,13 +372,13 @@ const BlogGrid = () => {
                                                    hover:text-[#3577F0] 
                                                    font-semibold 
                                                    text-base'
-                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></a>
+                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></Link>
                                     </div>
                                 </div>
 
                                 <div className='BOX-10 border p-5 rounded-lg relative group'>
                                     <div className='mb-5 overflow-hidden rounded-md'>
-                                        <img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 4.png" alt="" />
+                                        <Link to= "/Standard Post"><img className='rounded-lg bg-cover group-hover:scale-110 duration-500 cursor-pointer' src="./src/assets/blog/blog-grid/asset 4.png" alt="" /></Link>
                                         <h2 className='absolute top-52 right-10 text-sm text-white cursor-pointer'
                                             style={{
                                                 backgroundColor: "rgba(255,255,255,.5)",
@@ -390,10 +391,10 @@ const BlogGrid = () => {
                                         </h2>
                                     </div>
                                     <div className='mb-5'>
-                                        <h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Important updates for listing and delisting your NFTs</h1>
+                                        <Link to ="/Standard Post"><h1 className='text-[#292930] text-xl font-medium hover:text-[#3577F0] cursor-pointer duration-300 inline'>Important updates for listing and delisting your NFTs</h1></Link>
                                     </div>
                                     <div className='relative inline-block'>
-                                        <a className='before:absolute
+                                        <Link to="/Standard Post" className='before:absolute
                                                    duration-500
                                                    before:content-[""]
                                                    before:w-0
@@ -409,7 +410,7 @@ const BlogGrid = () => {
                                                    hover:text-[#3577F0] 
                                                    font-semibold 
                                                    text-base'
-                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></a>
+                                            href="#">Read More<i class="ri-arrow-right-line ml-2"></i></Link>
                                     </div>
                                 </div>
                             </div>
@@ -449,28 +450,28 @@ const BlogGrid = () => {
                                 <h1 className='text-[#292930] text-xl font-medium mb-8'>Latest Posts</h1>
                                 <div className='flex  border-b border-gray-100 pb-5'>
                                     <div className='rounded-lg overflow-hidden'>
-                                        <img className='bg-cover rounded-lg h-20 w-[170px] hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 9.png" alt="" />
+                                        <Link to="/Standard Post"> <img className='bg-cover rounded-lg h-20 w-[170px] hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 9.png" alt="" /></Link>
                                     </div>
                                     <div className='ml-10'>
-                                        <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Dubai’s FRAME Offers its Take on the</a>
+                                        <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Dubai’s FRAME Offers its Take on the</Link>
                                         <h1 className='text-sm text-gray-500 mt-3'>Mar 27, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
                                     </div>
                                 </div>
                                 <div className='flex  border-b border-gray-100 py-5'>
                                     <div className='rounded-lg overflow-hidden'>
-                                        <img className='bg-cover rounded-lg h-20 w-[188px] hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 10.png" alt="" />
+                                       <Link to ="/Standard Post"> <img className='bg-cover rounded-lg h-20 w-[188px] hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 10.png" alt="" /></Link>
                                     </div>
                                     <div className='ml-10'>
-                                        <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Apple presents App Best of 2020 winners</a>
+                                        <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Apple presents App Best of 2020 winners</Link>
                                         <h1 className='text-sm text-gray-500 mt-3'>Mar 20, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
                                     </div>
                                 </div>
                                 <div className='flex pt-5'>
                                     <div className='rounded-lg overflow-hidden'>
-                                        <img className='bg-cover rounded-lg h-20 w-[200px] hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 11.png" alt="" />
+                                       <Link to="/Standard Post"> <img className='bg-cover rounded-lg h-20 w-[200px] hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 11.png" alt="" /></Link>
                                     </div>
                                     <div className='ml-10'>
-                                        <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Gallaudet University innovation in education</a>
+                                        <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Gallaudet University innovation in education</Link>
                                         <h1 className='text-sm text-gray-500 mt-3'>Mar 15, 2022 <span className=' border-r-2 border-gray-300 mx-4'></span>300k Views</h1>
                                     </div>
                                 </div>
@@ -480,28 +481,28 @@ const BlogGrid = () => {
                                 <h1 className='text-[#292930] text-xl font-medium mb-8'>Recent Viewed Products</h1>
                                 <div className='flex border-b border-gray-100 pb-5 '>
                                     <div className='rounded-lg overflow-hidden'>
-                                        <img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 12.jpeg" alt="" />
+                                       <Link to="/Standard Post"> <img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 12.jpeg" alt="" /></Link>
                                     </div>
                                     <div className='ml-10 mt-3'>
-                                        <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Men's Fashion Tshirt</a>
+                                        <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Men's Fashion Tshirt</Link>
                                         <h1 className='text-lg font-semibold text-gray-300 mt-3'>$30 <span className='text-gray-700 ml-3'>$20</span></h1>
                                     </div>
                                 </div>
                                 <div className='flex border-b border-gray-100 py-5 '>
                                     <div className='rounded-lg overflow-hidden'>
-                                        <img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 13.jpeg" alt="" />
+                                       <Link to="/Standard Post"> <img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 13.jpeg" alt="" /></Link>
                                     </div>
-                                    {/* <div className='ml-10 mt-3'>
-                                        <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Nike Shoes</a>
+                                     <div className='ml-10 mt-3'>
+                                        <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Nike Shoes</Link>
                                         <h1 className='text-lg font-semibold text-gray-300 mt-3'>$200 <span className='text-gray-700 ml-3'>$150</span></h1>
-                                    </div> */}
+                                    </div> 
                                 </div>
                                 <div className='flex pt-5 '>
                                     <div className='rounded-lg overflow-hidden'>
-                                        <img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 14.jpeg" alt="" />
+                                       <Link to="/Standard Post"><img className='bg-cover rounded-lg  hover:scale-110 duration-500 cursor-pointer' src="../src/assets/blog/blog-list/asset 14.jpeg" alt="" /></Link> 
                                     </div>
                                     <div className='ml-10 mt-3'>
-                                        <a className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Addidas Shoes</a>
+                                        <Link to="/Standard Post" className='text-[#292930] text-lg font-medium hover:text-[#3577F0] cursor-pointer duration-300 leading-3' href="">Addidas Shoes</Link>
                                         <h1 className='text-lg font-semibold text-gray-300 mt-3'>$300 <span className='text-gray-700 ml-3'>$200</span></h1>
                                     </div>
                                 </div>

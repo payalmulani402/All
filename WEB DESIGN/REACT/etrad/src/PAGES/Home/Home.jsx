@@ -7,6 +7,7 @@ import SubscribePhoto from '../../Components/SubscribePhoto'
 import Footer from '../../Components/Footer/Footer'
 
 import '../Home/HomeStyle.css'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -25,6 +26,18 @@ const Home = () => {
                     <div className='BACKGROUND-IMG'>
                         <img className='absolute right-96 -bottom-20' src="./src/assets/Home/asset 8.png" alt="" />
                         <img className='absolute right-10 -bottom-12' src="./src/assets/Home/asset 9.png" alt="" />
+
+                        <div className='absolute right-[245px] -bottom-36'>
+                            <img className='h=[440px] w-[530px]' src="./src/assets/Home/asset 6.png" alt="" />
+                            <div className='absolute top-[15%] left-[30%] bg-white rounded-full'>
+                                <div className='h-24 w-24 flex justify-center items-center'>
+                                    <div className=''>
+                                        <h1 className='text-gray-500 text-md text-center'>From</h1>
+                                        <h1 className='text-[#3577f0] text-xl font-semibold'>$49.00</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="container mx-auto">
                         <div className='BACKGROUND-DETAIL absolute top-96'>
@@ -36,7 +49,7 @@ const Home = () => {
 
                             <div className='flex items-center'>
                                 <div className="BUTTON">
-                                    <a href="#" className="px-9 py-5 z-10 bg-white font-bold rounded-md relative 
+                                    <Link to='ShopNoSidebar' href="#" className="px-9 py-5 z-10 bg-white font-bold rounded-md relative 
                                 before:absolute
                                 before:contetn-['']
                                 before:px-10
@@ -50,7 +63,7 @@ const Home = () => {
                                 before:-z-10
                                 before:hover:scale-110
                                 before:duration-300">
-                                        <i class="ri-shopping-cart-line mr-2"></i> Shop Now</a>
+                                        <i class="ri-shopping-cart-line mr-2"></i> Shop Now</Link>
                                 </div>
 
                                 <div className='flex ml-8'>
@@ -291,7 +304,7 @@ const Home = () => {
                             <div className='flex justify-between items-center outline outline-1 outline-gray-200 rounded-md p-7 group hover:shadow-lg hover:shadow-zinc-100 hover:duration-500 hover:outline-none duration-[0.3s]'>
                                 <div className='flex items-center '>
                                     <div className='overflow-hidden rounded-md'>
-                                        <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 32.png" alt="" />
+                                     <Link to="/ProductV1">   <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 32.png" alt="" /></Link>
                                     </div>
                                     <div className='pl-8 leading-7'>
                                         <div className='flex items-center'>
@@ -311,15 +324,15 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div >
-                                    <a href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
-                                    <a href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
+                                    <Link to="/Cart" href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
+                                    <Link to="/Wishlist" href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
                                 </div>
                             </div>
 
                             <div className='flex justify-between items-center outline outline-1 outline-gray-200 rounded-md p-7 group hover:shadow-lg hover:shadow-zinc-100 hover:duration-500 hover:outline-none duration-[0.3s]'>
                                 <div className='flex items-center '>
                                     <div className='overflow-hidden rounded-md'>
-                                        <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 33.png" alt="" />
+                                       <Link to="/ProductV1"><img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 33.png" alt="" /></Link> 
                                     </div>
                                     <div className='pl-8 leading-7'>
                                         <div className='flex items-center'>
@@ -339,15 +352,15 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div >
-                                    <a href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
-                                    <a href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
+                                    <Link to="/Cart" href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
+                                    <Link to="/Wishlist" href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
                                 </div>
                             </div>
 
                             <div className='flex justify-between items-center outline outline-1 outline-gray-200 rounded-md p-7 group hover:shadow-lg hover:shadow-zinc-100 hover:duration-500 hover:outline-none duration-[0.3s]'>
                                 <div className='flex items-center '>
                                     <div className='overflow-hidden rounded-md'>
-                                        <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 34.png" alt="" />
+                                    <Link to="/ProductV1"> <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 34.png" alt="" /></Link>
                                     </div>
                                     <div className='pl-8 leading-7'>
                                         <div className='flex items-center'>
@@ -367,15 +380,15 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div >
-                                    <a href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
-                                    <a href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
+                                    <Link to="/Cart" href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
+                                    <Link to="/Wishlist"  href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
                                 </div>
                             </div>
 
                             <div className='flex justify-between items-center outline outline-1 outline-gray-200 rounded-md p-7 group hover:shadow-lg hover:shadow-zinc-100 hover:duration-500 hover:outline-none duration-[0.3s]'>
                                 <div className='flex items-center '>
                                     <div className='overflow-hidden rounded-md'>
-                                        <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 35.png" alt="" />
+                                    <Link to="/ProductV1"> <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 35.png" alt="" /></Link>
                                     </div>
                                     <div className='pl-8 leading-7'>
                                         <div className='flex items-center'>
@@ -395,15 +408,15 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div >
-                                    <a href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
-                                    <a href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
+                                    <Link to="/Cart" href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
+                                    <Link to="/Wishlist"  href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
                                 </div>
                             </div>
 
                             <div className='flex justify-between items-center outline outline-1 outline-gray-200 rounded-md p-7 group hover:shadow-lg hover:shadow-zinc-100 hover:duration-500 hover:outline-none duration-[0.3s]'>
                                 <div className='flex items-center '>
                                     <div className='overflow-hidden rounded-md'>
-                                        <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 36.png" alt="" />
+                                    <Link to="/ProductV1"> <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 36.png" alt="" /></Link>
                                     </div>
                                     <div className='pl-8 leading-7'>
                                         <div className='flex items-center'>
@@ -423,15 +436,15 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div >
-                                    <a href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
-                                    <a href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
+                                    <Link to="/Cart" href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
+                                    <Link to="/Wishlist"  href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
                                 </div>
                             </div>
 
                             <div className='flex justify-between items-center outline outline-1 outline-gray-200 rounded-md p-7 group hover:shadow-lg hover:shadow-zinc-100 hover:duration-500 hover:outline-none duration-[0.3s]'>
                                 <div className='flex items-center '>
                                     <div className='overflow-hidden rounded-md'>
-                                        <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 37.png" alt="" />
+                                    <Link to="/ProductV1"> <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 37.png" alt="" /></Link>
                                     </div>
                                     <div className='pl-8 leading-7'>
                                         <div className='flex items-center'>
@@ -451,15 +464,15 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div >
-                                    <a href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
-                                    <a href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
+                                    <Link to="/Cart" href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
+                                    <Link to="/Wishlist"  href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
                                 </div>
                             </div>
 
                             <div className='flex justify-between items-center outline outline-1 outline-gray-200 rounded-md p-7 group hover:shadow-lg hover:shadow-zinc-100 hover:duration-500 hover:outline-none duration-[0.3s]'>
                                 <div className='flex items-center '>
                                     <div className='overflow-hidden rounded-md'>
-                                        <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 38.png" alt="" />
+                                    <Link to="/ProductV1"> <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 38.png" alt="" /></Link>
                                     </div>
                                     <div className='pl-8 leading-7'>
                                         <div className='flex items-center'>
@@ -479,15 +492,15 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div >
-                                    <a href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
-                                    <a href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
+                                    <Link to="/Cart" href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
+                                    <Link to="/Wishlist"  href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
                                 </div>
                             </div>
 
                             <div className='flex justify-between items-center outline outline-1 outline-gray-200 rounded-md p-7 group hover:shadow-lg hover:shadow-zinc-100 hover:duration-500 hover:outline-none duration-[0.3s]'>
                                 <div className='flex items-center '>
                                     <div className='overflow-hidden rounded-md'>
-                                        <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 39.png" alt="" />
+                                    <Link to="/ProductV1">   <img className='rounded-md group-hover:scale-110 duration-500' src="./src/assets/home/asset 39.png" alt="" /></Link>
                                     </div>
                                     <div className='pl-8 leading-7'>
                                         <div className='flex items-center'>
@@ -507,8 +520,8 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div >
-                                    <a href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
-                                    <a href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></a>
+                                    <Link to="/Cart" href="#" className='block mb-6'><i class="ri-shopping-cart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
+                                    <Link to="/Wishlist"  href="#" ><i class="ri-heart-line  p-3 rounded-md border text-gray-600 hover:text-white hover:bg-[#3577F0] hover:border-none hover:duration-500"></i></Link>
                                 </div>
                             </div>
 
