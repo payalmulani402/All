@@ -1,5 +1,6 @@
 import React from 'react'
 import '../AllDropdown/AllDropdownstyle.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -70,8 +71,8 @@ export const AllRightpart = () => {
     <div className='right-part'>
       <div className='list-none flex text-sm'>
         <li className='hover:text-blue-500 cursor-pointer ml-6 text-gray-400'>Help</li>
-        <li className='hover:text-blue-500 cursor-pointer ml-6 text-gray-400'>Join Us</li>
-        <li className='hover:text-blue-500 cursor-pointer ml-6 text-gray-400'>Sign In</li>
+        <Link to="/SignUp" className='hover:text-blue-500 cursor-pointer ml-6 text-gray-400'>Join Us</Link>
+        <Link to="/SignIn" className='hover:text-blue-500 cursor-pointer ml-6 text-gray-400'>Sign In</Link>
       </div>
     </div>
   )
@@ -82,7 +83,7 @@ export const AllRightpart = () => {
 export const AllTopBar = () => {
   return (
     <>
-      <div className=' py-2 bg-[#292930]'>
+      <div className=' py-2 bg-[#292930]' id='top-scroll'>
           <div className='flex justify-between items-center container mx-auto'>
             <div className='flex '>
               <AllDropdownHover1 />

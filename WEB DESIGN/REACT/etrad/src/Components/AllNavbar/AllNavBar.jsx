@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../AllNavbar/AllNavstyle.css'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import IconDropdown2 from './IconDropdown2';
+import IconSidebarAll from './IconSidebarAll';
+import IconSearchAll from './IconSearchAll';
 
 
 export const AllNavBar = () => {
-    return (
 
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const handleSearchClick = () => {
+        setIsSearchOpen(!isSearchOpen);
+    };
+
+    const [isSidebarOpen, setSidebarOpen] = useState(false);
+    const toggleSidebar = () => {
+        setSidebarOpen(!isSidebarOpen);
+    };
+
+    const [isDetailsMenuOpen, setDetailsMenuOpen] = useState(false);
+    const toggleDetailsMenu = () => {
+        setDetailsMenuOpen(!isDetailsMenuOpen);
+    };
+
+    return (
         <>
             <div className='bg-white shadow-md'>
                 <div className='flex justify-between items-center container mx-auto'>
@@ -13,115 +31,254 @@ export const AllNavBar = () => {
                     {/* logo  */}
                     <div>
                         <Link to="/">
-                        <img src="./src/assets/home/asset 0.png" alt="" />
+                            <img src="./src/assets/home/asset 0.png" alt="" />
                         </Link>
-                </div>
+                    </div>
 
-                {/* navbar list  */}
-                <div className='grid grid-cols-6 gap-x-10'>
-                    <div className='home-dropdown'>
-                        <button className='font-semibold underline decoration-[2px] underline-offset-4 h-24 '><span className='text-gray-800 hover:text-black'>Home</span><i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i></button>
-                        <div className='home-content'>
-                            <ul className='list bg-white rounded-md'>
-                                <li><Link to='/' className='text-[#ff497c]' href="">Home-Electronics</Link></li>
-                                <li><Link to='/' className='hover:text-[#ff497c]' href="">Home-NFT</Link></li>
-                                <li><Link to='/' className='hover:text-[#ff497c]' href="">Home-Fashion</Link></li>
-                                <li><Link to='/' className='hover:text-[#ff497c]' href="">Home-Jewellery</Link></li>
-                                <li><Link to='/' className='hover:text-[#ff497c]' href="">Home-Furniture</Link></li>
-                                <li><Link to='/' className='hover:text-[#ff497c]' href="">Home-Multipurpose</Link></li>
-                                <li><Link to='/' className='hover:text-[#ff497c]' href="">RTL Version</Link></li>
+                    {/* navbar list  */}
+                    <div className='grid grid-cols-6 gap-x-10'>
+                        <div className='home-dropdown'>
+                            <button className='font-semibold underline decoration-[2px] underline-offset-4 h-24 '><span className='text-gray-800 hover:text-black'>Home</span><i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i></button>
+                            <div className='home-content shadow-md'>
+                                <ul className='list bg-white rounded-md'>
+                                    <li><NavLink to="/" className='text-[#ff497c]' href="">Home-Electronics</NavLink></li>
+                                    <li><NavLink to="/" className='hover:text-[#ff497c]' href="">Home-NFT</NavLink></li>
+                                    <li><NavLink to="/" className='hover:text-[#ff497c]' href="">Home-Fashion</NavLink></li>
+                                    <li><NavLink to="/" className='hover:text-[#ff497c]' href="">Home-Jewellery</NavLink></li>
+                                    <li><NavLink to="/" className='hover:text-[#ff497c]' href="">Home-Furniture</NavLink></li>
+                                    <li><NavLink to="/" className='hover:text-[#ff497c]' href="">Home-Multipurpose</NavLink></li>
+                                    <li><NavLink to="/" className='hover:text-[#ff497c]' href="">RTL Version</NavLink></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div className='home-dropdown text-gray-800 '>
+                            <button className='navbar-button font-semibold h-24'>Shop</button>
+                            <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
+                            <div className='home-content shadow-md'>
+                                <ul className='list bg-white rounded-md'>
+
+                                    <li><NavLink to="/ShopWithSidebar"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Shop With Sidebar</NavLink></li>
+
+                                    <li><NavLink to="/ShopNoSidebar"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Shop No Sidebar</NavLink></li>
+
+                                    <li><NavLink to="/ProductV1"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Product Variation 1</NavLink></li>
+
+                                    <li><NavLink to="/ProductV2"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Product Variation 2</NavLink></li>
+
+                                    <li><NavLink to="/ProductV3"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Product Variation 3</NavLink></li>
+
+                                    <li><NavLink to="/ProductV4"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Product Variation 4</NavLink></li>
+
+                                    <li><NavLink to="/ProductV5"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Product Variation 5</NavLink></li>
+
+                                    <li><NavLink to="/ProductV6"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Product Variation 6</NavLink></li>
+
+                                    <li><NavLink to="/ProductV7"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Product Variation 7</NavLink></li>
+
+                                    <li><a className='hover:text-[#ff497c]' href="">Product Variation 8</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='home-dropdown text-gray-800'>
+                            <button className='navbar-button font-semibold h-24'>Pages</button>
+                            <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
+                            <div className='home-content shadow-md'>
+                                <ul className='list bg-white rounded-md'>
+                                    <li><NavLink to="/Wishlist"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Wishlist</NavLink></li>
+                                    <li><NavLink to="/Cart"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Cart</NavLink></li>
+                                    <li><NavLink to="/Checkout"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Checkout</NavLink></li>
+                                    <li><NavLink to="/Account"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Account</NavLink></li>
+                                    <li><NavLink to="/SignUp"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Sign Up</NavLink></li>
+                                    <li><NavLink to="/SignIn"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Sign In</NavLink></li>
+                                    <li><NavLink to="/ForgotPassword"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Forgot Password</NavLink></li>
+                                    <li><NavLink to="/ResetPassword"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Reser Password</NavLink></li>
+                                    <li><NavLink to="/PrivacyPolicy"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Privacy Policy</NavLink></li>
+                                    <li><NavLink to="/ComingSoon"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Coming Soon</NavLink></li>
+                                    <li><NavLink to="/Error404"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">404 Error</NavLink></li>
+                                    <li><NavLink to="/Typography"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Typography</NavLink></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='home-dropdown text-gray-800'>
+                            <button className='navbar-button font-semibold h-24'><Link to="/About">About</Link></button>
+                        </div>
+
+                        <div className='home-dropdown text-gray-800'>
+                            <button className='navbar-button font-semibold h-24'>Blog</button>
+                            <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
+                            <div className='home-content shadow-md'>
+                                <ul className='list bg-white rounded-md'>
+                                    <li><NavLink to="/BlogList"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Blog List</NavLink></li>
+                                    <li><NavLink to="/BlogGrid"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Blog Grid</NavLink></li>
+                                    <li><NavLink to="/StandardPost"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Standard Post</NavLink></li>
+                                    <li><NavLink to="/GallaryPost"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Gallery Post</NavLink></li>
+                                    <li><NavLink to="/VideoPost"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Video Post</NavLink></li>
+                                    <li><NavLink to="/AudioPost"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Audio Post</NavLink></li>
+                                    <li><NavLink to="/QuotePost"
+                                        style={({ isActive }) => ({
+                                            color: isActive ? '#ff497c' : '#292930',
+                                        })}
+                                        className='hover:text-[#ff497c]' href="">Quote Post</NavLink></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className='home-dropdown text-gray-800'>
+                            <button className='navbar-button font-semibold h-24'><Link to="/Contact">Contact</Link></button>
+                        </div>
+
+                    </div>
+
+
+                    {/* serach bar  */}
+
+                    <div className='flex'>
+                        <div onClick={handleSearchClick}>
+                            <div className='mr-10'>
+                                <div class="border text-gray-500 rounded-md ">
+                                    <i class="ri-search-line mx-2 text-lg"></i>
+                                    <input className='w-56 py-2 placeholder:pl-2 outline-none caret-transparent focus:caret-black' type="search" placeholder='What are you looking for?' />
+                                </div>
+                            </div>
+                        </div>
+                        <IconSearchAll isOpen={isSearchOpen} onClose={handleSearchClick} />
+
+                        {/* nav icon  */}
+                        <div className='text-2xl text-gray-600 flex justify-between w-[120px] h-10'>
+                            <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
+                                <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><Link to="/Wishlist"> <i class="ri-heart-line "></i></Link></li>
                             </ul>
+
+                            <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100 ml-3'>
+                                <button onClick={toggleSidebar}>
+                                    <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><i class="ri-shopping-cart-line "></i></li>
+                                </button>
+                            </ul>
+                            <IconSidebarAll isOpen={isSidebarOpen} onClose={toggleSidebar} />
+
+                
+                            <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
+                                <div className="nav-icon" onClick={toggleDetailsMenu}>
+                                    <li className=' nav-icon h-10 w-10 flex justify-center items-center rounded-full' ><i class="ri-user-3-line "></i>
+                                    </li>
+                                </div>
+                            </ul>
+                            <IconDropdown2 isOpen={isDetailsMenuOpen} />
                         </div>
                     </div>
-
-                    <div className='home-dropdown text-gray-800 '>
-                        <button className='navbar-button font-semibold h-24'>Shop</button>
-                        <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
-                        <div className='home-content'>
-                            <ul className='list bg-white rounded-md'>
-                                <li><Link to='/ShopWithSidebar' className='hover:text-[#ff497c]' href="">Shop With Sidebar</Link></li>
-                                <li><Link to='/ShopNoSidebar' className='hover:text-[#ff497c]' href="">Shop No Sidebar</Link></li>
-                                <li><Link to='/ProductV1' className='hover:text-[#ff497c]' href="">Product Variation 1</Link></li>
-                                <li><Link to='/ProductV2' className='hover:text-[#ff497c]' href="">Product Variation 2</Link></li>
-                                <li><Link to='/ProductV3' className='hover:text-[#ff497c]' href="">Product Variation 3</Link></li>
-                                <li><Link to='/ProductV4' className='hover:text-[#ff497c]' href="">Product Variation 4</Link></li>
-                                <li><Link to='/ProductV5' className='hover:text-[#ff497c]' href="">Product Variation 5</Link></li>
-                                <li><Link to='/ProductV6' className='hover:text-[#ff497c]' href="">Product Variation 6</Link></li>
-                                <li><Link to='/ProductV7' className='hover:text-[#ff497c]' href="">Product Variation 7</Link></li>  
-
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className='home-dropdown text-gray-800'>
-                        <button className='navbar-button font-semibold h-24'>Pages</button>
-                        <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
-                        <div className='home-content'>
-                            <ul className='list bg-white rounded-md'>
-                                <li><Link to='/Wishlist' className='hover:text-[#ff497c]' href="">Wishlist</Link></li>
-                                <li><Link to='/Cart' className='hover:text-[#ff497c]' href="">Cart</Link></li>
-                                <li><Link to='/Checkout' className='hover:text-[#ff497c]' href="">Checkout</Link></li>
-                                <li><Link to='/Account' className='hover:text-[#ff497c]' href="">Account</Link></li>
-                                <li><Link to='/SignUp' className='hover:text-[#ff497c]' href="">SignUp</Link></li>
-                                <li><Link to='/SignIn' className='hover:text-[#ff497c]' href="">SignIn</Link></li>
-                                <li><Link to='/ForgotPassword' className='hover:text-[#ff497c]' href="">ForgotPasword</Link></li>
-                                <li><Link to='/ResetPassword' className='hover:text-[#ff497c]' href="">ResetPassword</Link></li>
-                                <li><Link to='/PrivacyPolicy' className='hover:text-[#ff497c]' href="">PrivacyPolicy</Link></li>
-                                <li><Link to='/ComingSoon' className='hover:text-[#ff497c]' href="">Comingsoon</Link></li>
-                                <li><Link to='/Error404 ' className='hover:text-[#ff497c]' href="">Error404</Link></li>
-                                <li><Link to='/Typography' className='hover:text-[#ff497c]' href="">Typography</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className='home-dropdown text-gray-800 mt-9'>
-                        <Link to='/About' className='navbar-button font-semibold h-24'>About</Link>
-                    </div>
-
-                    <div className='home-dropdown text-gray-800'>
-                        <button className='navbar-button font-semibold h-24'>Blog</button>
-                        <i class="fa-solid fa-angle-down text-gray-500 transition-all text-xs ml-1"></i>
-                        <div className='home-content'>
-                            <ul className='list bg-white rounded-md'>
-                                <li><Link to="/Blog List" className='hover:text-[#ff497c]' href="">Blog List</Link></li>
-                                <li><Link to="/Blog Grid" className='hover:text-[#ff497c]' href="">Blog Grid</Link></li>
-                                <li><Link to="/Standard Post" className='hover:text-[#ff497c]' href="">Standard Post</Link></li>
-                                <li><Link to="/Gallery Post" className='hover:text-[#ff497c]' href="">Gallery Post</Link></li>
-                                <li><Link to="/Video Post" className='hover:text-[#ff497c]' href="">Video Post</Link></li>
-                                <li><Link to="/Audio Post" className='hover:text-[#ff497c]' href="">Audio Post</Link></li>
-                                <li><Link to="/Quote Post" className='hover:text-[#ff497c]' href="">Quote Post</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className='home-dropdown text-gray-800 mt-9'>
-                        <Link to='/Contact' className='navbar-button font-semibold h-24'>Contact</Link>
-                    </div>
-
-                </div>
-
-
-                {/* serach bar  */}
-                <div class="border text-gray-500 rounded-md ">
-                    <i class="ri-search-line mx-2 text-lg"></i>
-                    <input className='w-56 py-2 placeholder:pl-2 outline-none caret-transparent focus:caret-black' type="search" placeholder='What are you looking for?' />
-                </div>
-
-
-                {/* nav icon  */}
-                <div className='text-2xl text-gray-600 flex justify-between w-[120px] h-10'>
-                    <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                        <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><i class="ri-heart-line "></i></li>
-                    </ul>
-                    <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                        <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><i class="ri-shopping-cart-line "></i></li>
-                    </ul>
-                    <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                        <li className='nav-icon h-10 w-10 flex justify-center items-center rounded-full'><i class="ri-user-3-line "></i></li>
-                    </ul>
                 </div>
             </div>
-    </div>
         </>
     )
 }

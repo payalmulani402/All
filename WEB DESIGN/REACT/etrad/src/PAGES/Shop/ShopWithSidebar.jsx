@@ -10,6 +10,7 @@ const ShopWithSidebar = () => {
     return (
         <>
             <div>
+               
                 <section className='SHOP-DROPDOWN'>
                     <AllTopBar />
                 </section>
@@ -25,7 +26,7 @@ const ShopWithSidebar = () => {
                 <section className='SHOP-SPEAKER'>
                     <Speaker p1="My Account" p2="Explore All Products" />
                 </section>
-
+                
                 <section className='SHOP-FOOTER'>
                     <SubscribePhoto />
                     <Footer />

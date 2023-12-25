@@ -38,7 +38,7 @@ const ProductV1 = () => {
                             <img className='rounded-md bg-cover' src="./src/assets/shop/p1/asset 9.png" alt="" />
                             <img className='rounded-md bg-cover' src="./src/assets/shop/p1/asset 10.png" alt="" />
                         </div>
-                        <div className='main-div-details h-[1140px] sticky top-28'>
+                        <div className='main-div-details h-[1140px] sticky top-28 '>
                             <h1 className='font-bold text-4xl text-[#292930] tracking-wide mb-8'>Ella Everyday Tote</h1>
                             <h1 className='font-semibold text-2xl text-[#292930] mb-5'>$155.00 - $255.00</h1>
                             <div className='flex border-b-2 border-gray-200'>
@@ -110,7 +110,7 @@ const ProductV1 = () => {
                                                 before:bg-[#3577F0]
                                                 before:scale-0 
                                                 before:-z-10
-                                                before:hover:scale-105
+                                                   before:hover:scale-105
                                                 before:duration-300
                                                 before:top-0
                                                 before:bottom-0

@@ -1,0 +1,14 @@
+.nav-item .nav-link{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+.button {
+    width: 1920px;
+    height: 5014.31px;
+    left: 3px;
+}

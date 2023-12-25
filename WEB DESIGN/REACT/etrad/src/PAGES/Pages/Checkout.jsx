@@ -3,7 +3,6 @@ import React from 'react'
 import { AllTopBar } from '../../Components/AllDropdown/AllDropdownHover'
 import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import Footer from '../../Components/Footer/Footer'
-import { Link } from 'react-router-dom'
 
 const Checkout = () => {
 
@@ -279,7 +278,7 @@ const Checkout = () => {
                                         <p className='text-gray-500 ml-7 leading-8 tracking-wide mt-5'>Pay via PayPal; you can pay with your credit card if you don’t have a <br />PayPal account.</p>
                                     </div>
                                     <div className='relative text-center w-full py-5 rounded-md text-white font-bold z-10 mt-8'>
-                                        <Link to="/Checkout" href="" className='
+                                        <a href="" className='
                                         before:absolute
                                         before:content-[""]
                                         before:bg-[#3577F0]
@@ -291,7 +290,7 @@ const Checkout = () => {
                                         before:duration-300
                                         before:rounded-md
                                         before:-z-10
-                                        '>Process to Checkout</Link>
+                                        '>Process to Checkout</a>
                                     </div>
                                 </div>
                             </div>

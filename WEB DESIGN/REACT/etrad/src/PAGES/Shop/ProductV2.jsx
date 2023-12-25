@@ -115,7 +115,7 @@ const ProductV2 = () => {
                                                 before:bg-[#3577F0]
                                                 before:scale-0 
                                                 before:-z-10
-                                                before:hover:scale-105
+                                                   before:hover:scale-105
                                                 before:duration-300
                                                 before:top-0
                                                 before:bottom-0

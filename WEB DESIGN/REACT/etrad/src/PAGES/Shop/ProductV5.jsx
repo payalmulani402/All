@@ -78,7 +78,7 @@ const ProductV5 = () => {
                                 <div className='flex justify-between items-center'>
                                     <div className='flex items-center'>
                                         <div>
-                                            <Link to="/https://www.amazon.in/" href="#" className='relative z-10 font-bold bg-[#3577F0] text-white px-24 py-5 rounded-md 
+                                            <Link to="/Cart" href="#" className='relative z-10 font-bold bg-[#3577F0] text-white px-24 py-5 rounded-md 
                                                 before:absolute
                                                 before:content-[""]
                                                 before:bg-[#3577F0]

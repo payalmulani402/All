@@ -86,7 +86,7 @@ const ProductV6 = () => {
                                 <div className='flex justify-between items-center mt-12'>
                                     <div className='flex items-center'>
                                         <div>
-                                            <Link to="/https://www.amazon.in/" href="#" className='relative z-10 font-bold bg-[#3577F0] text-white px-24 py-5 rounded-md 
+                                            <Link to="/Cart" href="#" className='relative z-10 font-bold bg-[#3577F0] text-white px-24 py-5 rounded-md 
                                                 before:absolute
                                                 before:content-[""]
                                                 before:bg-[#3577F0]
@@ -102,7 +102,7 @@ const ProductV6 = () => {
                                         </div>
 
                                         <div className='flex mx-5'>
-                                            <Link to ="/Wishlist" href="#" className='relative z-10 px-1 py-3 border-2 rounded-md
+                                            <Link to="/Wishlist" href="#" className='relative z-10 px-1 py-3 border-2 rounded-md
                                                 before:absolute 
                                                 before:h-[100%]
                                                 before:w-[100%]

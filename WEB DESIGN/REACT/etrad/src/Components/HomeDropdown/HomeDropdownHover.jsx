@@ -1,5 +1,6 @@
 import React from 'react'
 import '../HomeDropdown/HomeDropdownstyle.css'
+import { Link } from 'react-router-dom';
 
 
 // first-button :-
@@ -65,11 +66,11 @@ export const HomeDropdownHover2 = () => {
 // Rightpart :-
 export const HomeRightpart = () => {
   return (
-    <div className='right-part z-[60]'>
+    <div className='right-part z-10'>
       <div className='list-none flex text-sm text-gray-700 '>
         <li className='hover:text-blue-500 cursor-pointer ml-6 text-gray-500'>Help</li>
-        <li className='hover:text-blue-500 cursor-pointer ml-6 text-gray-500'>Join Us</li>
-        <li className='hover:text-blue-500 cursor-pointer ml-6 text-gray-500'>Sign In</li>
+        <Link to="/SignUp" className='hover:text-blue-500 cursor-pointer ml-6 text-gray-500'>Join Us</Link>
+        <Link to="/SignIn" className='hover:text-blue-500 cursor-pointer ml-6 text-gray-500'>Sign In</Link>
       </div>
     </div>
   )

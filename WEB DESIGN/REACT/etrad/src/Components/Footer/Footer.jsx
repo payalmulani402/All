@@ -82,8 +82,8 @@ const Footer = () => {
                         <b className='text-gray-800'>Quick Link</b>
                         <ul className='list-item text-gray-500 font-medium mt-6'>
                             <li className='mt-4'><Link to="/PrivacyPolicy" className='link hover:text-gray-800 duration-500 ' href="#">Privacy Policy</Link></li>
-                            <li className='mt-4'><Link to="/" className='link hover:text-gray-800 duration-500 ' href="#">Terms Of Use</Link></li>
-                            <li className='mt-4'><Link to="/" className='link hover:text-gray-800 duration-500 ' href="#">FAQ</Link></li>
+                            <li className='mt-4'><Link to="/Termsofuse" className='link hover:text-gray-800 duration-500 ' href="#">Terms Of Use</Link></li>
+                            <li className='mt-4'><Link to="/Termsofuse  " className='link hover:text-gray-800 duration-500 ' href="#">FAQ</Link></li>
                             <li className='mt-4'><Link to="/Contact" className='link hover:text-gray-800 duration-500 ' href="#">Contact</Link></li>
                             <li className='mt-4'><Link to="/Contact" className='link hover:text-gray-800 duration-500 ' href="#">Contact</Link></li>
                         </ul>
@@ -94,12 +94,13 @@ const Footer = () => {
                         <h1 className='mt-6'>Save $3 With App & New User only</h1>
 
                         <div className='flex items-center mt-5'>
-                            <div>
-                               <Link to="/"> <img src="./src/assets/home/asset 51.png" alt="" /></Link>
-                            </div>
+                            <a href='#top-scroll'>
+                                <img src="./src/assets/home/asset 51.png" alt="" />
+                            </a>
                             <div className='ml-5'>
-                                <Link to="/"><img className='mb-4' src="./src/assets/home/asset 52.png" alt="" /></Link>
-                                <Link to ="/"><img src="./src/assets/home/asset 53.png" alt="" /></Link>
+                                <a href="#top-scroll">
+                                    <img className='mb-4' src="./src/assets/home/asset 52.png" alt="" />
+                                    <img src="./src/assets/home/asset 53.png" alt="" /></a>
                             </div>
                         </div>
                     </div>
@@ -111,19 +112,19 @@ const Footer = () => {
                 <div className='flex justify-between items-center mt-10 pb-5'>
                     <div className='text-2xl text-gray-600 flex justify-between w-[160px] h-10'>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                           <Link to="/"><li className='nav-icon flex justify-center items-center rounded-full'><i class="ri-facebook-fill text-lg"></i></li></Link>
+                            <li className='nav-icon flex justify-center items-center rounded-full'><a href="#top-scroll"><i class="ri-facebook-fill text-lg"></i></a></li>
                         </ul>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                        <Link to="/"> <li className='nav-icon flex justify-center items-center rounded-full'><i class="ri-instagram-line text-lg"></i></li></Link>
+                            <li className='nav-icon flex justify-center items-center rounded-full'><a href="#top-scroll"><i class="ri-instagram-line text-lg"></i></a></li>
                         </ul>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                        <Link to="/"> <li className='nav-icon flex justify-center items-center rounded-full'><i class="ri-twitter-fill text-lg"></i></li></Link>
+                            <li className='nav-icon flex justify-center items-center rounded-full'><a href="#top-scroll"><i class="ri-twitter-fill text-lg"></i></a></li>
                         </ul>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                        <Link to="/">  <li className='nav-icon flex justify-center items-center rounded-full '><i class="ri-linkedin-fill text-lg"></i></li></Link>
+                            <li className='nav-icon flex justify-center items-center rounded-full '><a href="#top-scroll"><i class="ri-linkedin-fill text-lg"></i></a></li>
                         </ul>
                         <ul className='flex justify-between w-[20px] btn-hover hover:text-slate-100'>
-                        <Link to="/"> <li className='nav-icon flex justify-center items-center rounded-full'><i class="ri-discord-line text-lg"></i></li></Link>
+                            <li className='nav-icon flex justify-center items-center rounded-full'><a href="#top-scroll"><i class="ri-discord-line text-lg"></i></a></li>
                         </ul>
                     </div>
 
