@@ -1,14 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+/* nav css start */
 .nav-item .nav-link{
     display: flex;
-    justify-content: space-evenly;
     list-style-type: none;
 }
 
-a{
+.nav-link li a{
+    margin: 0 12px ;
     text-decoration: none;
 }
-.button {
-    width: 1920px;
-    height: 5014.31px;
-    left: 3px;
+.nav-link li .active{
+    color: #FD4F56;
+    margin: 0 12px ;
+    text-decoration: none;
+    border-bottom: 1px solid #FD4F56; 
 }
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: 10px 90px;
+}
+.logo img{
+    height: 51.69px;
+    width: 51px;
+}
+.nav-btn{
+    height: 55px;
+    width: 189px;
+    background: #FD4F56;
+    border-radius: 6px;
+    border: none;
+    color: white;
+
+}
+ .bg-title {
+    font-size: ;
+ }

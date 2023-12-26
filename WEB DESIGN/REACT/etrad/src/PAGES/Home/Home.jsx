@@ -283,10 +283,11 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+                
                 <div className='PRODUCT mt-14 '>
                         <div className='grid grid-cols-4 gap-10'>
                             {
-                                dataJson.map(Data => {
+                                dataJson.slice(0,8).map(Data => {
                                     return (
                                         <>
                                             <div className='group mb-10'>
