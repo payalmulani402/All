@@ -1,7 +1,7 @@
 import React from 'react'
 import '.././Todolist/Todo.css'
 
-const Todolist = () => {
+const Todolist = ({rows,deleteRow,EditRow }) => {
     return (
         <div >
             <div className='flex justify-between mt-3'>
@@ -135,14 +135,14 @@ const Todolist = () => {
                     <td>+1 202 555 0115</td>
                     <td><button className='border border-blue-500 py-2 px-4 mt-2 rounded-md'>Edit</button> <button className='border border-pink-500 py-2 px-4 mt-2 rounded-md'>Delete</button></td>
                 </tr>
-
-
+                <div></div>
             </table>
-
         </div>
-
 
     )
 }
 
 export default Todolist
+
+
+

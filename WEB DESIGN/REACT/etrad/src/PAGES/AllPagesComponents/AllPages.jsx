@@ -24,6 +24,7 @@ import PrivacyPolicy from '../Pages/PrivacyPolicy'
 import ComingSoon from '../Pages/ComingSoon'
 import Error404 from '../Pages/Error404'
 import Typography from '../Pages/Typography'
+import ScrollToTop from '../Pages/Scrolltotop'
 
 import About from '../About/About'
 
@@ -47,6 +48,7 @@ export default function AllPages() {
     <>
       <div>
         <BrowserRouter>
+        <ScrollToTop/>
           <Routes>
 
             {/* HOME-SECTION-COMPONENTS */}
@@ -97,8 +99,10 @@ export default function AllPages() {
 
             {/* Termsofuse  */}
             <Route path='/Termsofuse' element={<Termsofuse />}></Route>
+         
 
           </Routes>
+
         </BrowserRouter>
 
       </div>
