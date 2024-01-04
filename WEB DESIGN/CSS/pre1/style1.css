@@ -1,0 +1,78 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    background: #f2f2f2;
+
+}
+.Container{
+    background: white;
+    width: 500px;
+    padding: 50px;
+    margin: 50px auto 0;
+    border-top: 5px solid mediumturquoise;
+    box-shadow: 0  0 7px 5px rgba(0,0,0,0.5);
+}
+.Container h2{
+    font-size: 24px;
+    line-height: 24px;
+    padding: 50px;
+    text-align: center;
+
+}
+.input-name{
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.lock{
+    padding: 8px 11px;
+}
+.name{
+    width: 45%;
+    padding: 8px 0 8px 40px;
+}
+.text-name{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+}
+.input-name i{
+    position: absolute;
+    font-size: 18px;
+     color: grey;
+     border-right: 1px solid #cccccc;
+}
+.email-Address{
+    padding: 8px;
+}
+
+.inpt,.name{
+    border: 1px solid #cccccc;
+    outline: none; 
+}
+
+.inpt:hover, .name:hover{
+    background-color: mediumturquoise;
+}
+.check{
+    margin-right:15px ;
+    position: relative;
+}
+.check::before{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    vertical-align: -2px;
+    border:  2px solid #39C2FF;
+    padding: 2.5px;
+    background-color: transparent;
+    background-clip: content-box;
+    transition: all 0.2s ease;
+}

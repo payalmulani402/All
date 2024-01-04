@@ -6,7 +6,7 @@ const IconSearchHome = ({ isOpen, onClose }) => {
     <div>
       <div className={`popup ${isOpen ? 'open' : ''}`}>
 
-        <div className="absolute right-12 -top-[60px]" onClick={onClose}>
+        <div className="absolute right-10 top-[130px]" onClick={onClose}>
           <div className='flex justify-center items-center h-10 w-10 bg-[#F6F7FB] rounded-full cursor-pointer hover:bg-[#3577F0] hover:text-white duration-300'>
             <i class="fa-solid fa-xmark text-base"></i>
           </div>
@@ -19,7 +19,7 @@ const IconSearchHome = ({ isOpen, onClose }) => {
 
         
         <div className='relative'>
-          <div className='absolute -left-[860px] -top-[60px] p-10 rounded-lg bg-white w-[750px]'>
+          <div className='absolute -left-[950px] top-[130px] p-10 rounded-lg bg-white w-[850px]'>
             <div className='border py-3 rounded-md'>
               <i class="ri-search-line mx-3 text-lg"></i>
               <input className='placeholder:text-black outline-none text-base' type="text" placeholder="Write Somthing...." />

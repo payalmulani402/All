@@ -1,0 +1,29 @@
+
+body{
+    background-color:orange;
+    align-items: center;
+}
+.main-div{
+    padding: 50px 30px;
+    background-color: white;
+    display: inline-block;
+
+
+}
+ .Container{
+    width: 400px;
+    height: 500px;
+     background-color: white;
+     text-align: center;
+ } 
+
+ input{
+    margin-bottom: 20px;
+    border: none;
+ }
+
+ .sss{
+    border: 1px solid black ;
+
+ }
+ 

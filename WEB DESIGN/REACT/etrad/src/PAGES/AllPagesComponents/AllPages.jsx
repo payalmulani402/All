@@ -24,7 +24,6 @@ import PrivacyPolicy from '../Pages/PrivacyPolicy'
 import ComingSoon from '../Pages/ComingSoon'
 import Error404 from '../Pages/Error404'
 import Typography from '../Pages/Typography'
-import ScrollToTop from '../Pages/Scrolltotop'
 
 import About from '../About/About'
 
@@ -40,6 +39,7 @@ import QuotePost from '../Blog/QuotePost'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Termsofuse from '../../Components/Termsofuse'
+import ScrollToTop from '../../Components/ScrollToTop'
 
 
 
@@ -48,7 +48,7 @@ export default function AllPages() {
     <>
       <div>
         <BrowserRouter>
-        <ScrollToTop/>
+          <ScrollToTop />
           <Routes>
 
             {/* HOME-SECTION-COMPONENTS */}
@@ -99,10 +99,9 @@ export default function AllPages() {
 
             {/* Termsofuse  */}
             <Route path='/Termsofuse' element={<Termsofuse />}></Route>
-         
+
 
           </Routes>
-
         </BrowserRouter>
 
       </div>

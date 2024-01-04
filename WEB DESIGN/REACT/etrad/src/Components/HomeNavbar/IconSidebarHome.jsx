@@ -47,7 +47,7 @@ const IconSidebarHome = ({ isOpen, onClose }) => {
                     onClick={onClose}>
                 </div>
 
-                <div className='p-10 bg-white h-auto'>
+                <div className='p-10 bg-white h-[100vh]'>
                     <div className='flex justify-between items-center mt-8 border-b-[2px] border-[#F6F7FB] pb-7'>
                         <h1 className='text-3xl font-bold text-[#27272E]'>Cart review</h1>
                     </div>

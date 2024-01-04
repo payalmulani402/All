@@ -3,11 +3,11 @@
     bottom: 53%;
     right: 23%;
     width: 100px;
-    height:100px;
+    height: 100px;
     transform: rotate(-95deg);
 }
 
-.music-signal .item-circle{
+.music-signal .item-circle {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -20,36 +20,104 @@
     animation: signalanimation 2s infinite;
 }
 
-.music-signal .item-circle.circle-1{
+.music-signal .item-circle.circle-1 {
     animation-delay: 800ms;
 }
 
-.music-signal .item-circle.circle-2{
+.music-signal .item-circle.circle-2 {
     width: 80px;
     height: 80px;
     animation-delay: 600ms;
 }
-.music-signal .item-circle.circle-3{
+
+.music-signal .item-circle.circle-3 {
     width: 60px;
     height: 60px;
     animation-delay: 400ms;
 }
-.music-signal .item-circle.circle-4{
+
+.music-signal .item-circle.circle-4 {
     width: 40px;
     height: 40px;
     animation-delay: 200ms
 }
-.music-signal .item-circle.circle-5{
+
+.music-signal .item-circle.circle-5 {
     width: 20px;
     height: 20px;
     animation-delay: 0ms;
 }
 
 @keyframes signalanimation {
-    0% { 
+    0% {
         opacity: 1;
     }
-    100% { 
-        opacity: 0; 
+
+    100% {
+        opacity: 0;
     }
+}
+
+.swiper-slide-active {
+    width: 500px !important;
+    margin-bottom: 200px !important;
+    transition: 0.3s;
+}
+
+.swiper-slide-active img {
+    width: 450px;
+}
+
+.swiper-slide-next {
+    width: 200px !important;
+    margin-top: 300px !important;
+    margin-right: 350px;
+}
+
+.swiper-slide-next {
+    width: 200px !important;
+    margin-top: 300px !important;
+    margin-right: 150px;
+}
+
+.swiper-slide-next img {
+    width: 150px;
+}
+
+.swiper-slide {
+    width: 100px;
+}
+
+.swiper-wrapper {
+    padding-top: 30px;
+}
+
+.swiper-pagination {
+    left: -32% !important;
+    bottom: 24% !important;
+}
+
+.swiper-pagination-bullet {
+    width: 30px !important;
+    height: 5px !important;
+    border-radius: 10px !important;
+    background-color: white;
+}
+
+.swiper-pagination-bullet-active {
+    width: 40px !important;
+    height: 5px !important;
+    border-radius: 10px !important;
+    background-color: #FF497C !important;
+    transition: 0.5s !important;
+}
+
+/* categories slide */
+.slick-slide >div{
+    margin: 0 15px;
+}
+
+/* feedback slide */
+.slick-center {
+    margin-top: 0.7%;
 }

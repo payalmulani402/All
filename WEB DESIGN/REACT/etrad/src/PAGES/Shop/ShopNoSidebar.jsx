@@ -78,7 +78,7 @@ const ShopNoSidebar = () => {
                     </div>
 
 
-                    <div className='PRODUCT mt-14 '>
+                    <div className='PRODUCTJSON mt-14 '>
                         <div className='grid grid-cols-4 gap-10'>
                             {
                                 dataJson.map(Data => {
@@ -87,16 +87,16 @@ const ShopNoSidebar = () => {
                                             <div className='group mb-10'>
                                                 <div className='relative overflow-hidden rounded-[35px]'>
                                                     <div>
-                                                        <img className='w-full object-cover group-hover:scale-110 duration-200' src={Data.image} alt="" />
+                                                        <img className='w-96 h-96 object-cover group-hover:scale-110 duration-200' src={Data.image} alt="" />
 
-                                                        <div className=' absolute left-9 -bottom-3 group-hover:bottom-10 duration-700 opacity-0 group-hover:opacity-100'>
+                                                        <div className=' absolute left-12 -bottom-3 group-hover:bottom-10 duration-700 opacity-0 group-hover:opacity-100'>
                                                             <div className='flex justify-center'>
                                                                 <div className='flex items-center'>
                                                                     <div className='hover:scale-110 duration-300 inline-block'>
                                                                         <Link to="/Wishlist" href="" className=''><i class="fa-regular fa-heart  bg-white p-3 rounded-[4px]"></i></Link>
                                                                     </div>
-                                                                    <div className='mx-3'>
-                                                                        <Link to="/Cart" href="#" className=" px-3 py-3 z-10 bg-[#ff497c] text-white font-bold rounded-[4px] relative 
+                                                                    <div className='mx-4'>
+                                                                        <Link to="/Cart" href="#" className=" px-7 py-3 z-10 bg-[#ff497c] text-white font-bold rounded-[4px] relative 
                                                                                 before:absolute
                                                                                 before:contetn-['']
                                                                                 before:px-10
@@ -121,7 +121,7 @@ const ShopNoSidebar = () => {
                                                     </div>
                                                 </div>
 
-                                                 <div className=''>
+                                                <div className=''>
                                                     <div className='mt-5'>
                                                         <a className='text-gray-500 font-semibold tracking-wider hover:text-[#3577F0] duration-300 cursor-pointer'>{Data.name}</a>
                                                     </div>
@@ -136,14 +136,14 @@ const ShopNoSidebar = () => {
                                                             <li className='bg-[#59C3C0] h-3 w-3 mx-2 rounded-full cursor-pointer'></li>
                                                         </ul>
                                                     </div>
-                                                </div> 
-                                             </div>
+                                                </div>
+                                            </div>
                                         </>
                                     )
                                 })
                             }
                         </div>
-                    </div> 
+                    </div>
 
                     <div>
                         <div className='text-center mt-10'>

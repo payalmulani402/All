@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(black,yellow,blue);
+}
+.container{
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    width: 60%;
+}
+.registation{
+    font-family: algerian;
+    text-align: center;
+    border-bottom:3px dashed red ;
+    font-size: 30px;
+}
+from.container2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .container2 .inputbox{
+    width: calc(100%/2-20px);
+    margin: 10px;
+}
+form .container2 .inputbox input{
+    height: 45px;
+    width: 100%;
+}
+.lastinput{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 1cm;
+}
