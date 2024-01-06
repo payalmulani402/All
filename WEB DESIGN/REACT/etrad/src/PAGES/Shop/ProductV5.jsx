@@ -1,13 +1,29 @@
 import React from 'react'
-
 import { AllTopBar } from '../../Components/AllDropdown/AllDropdownHover'
 import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import SubscribePhoto from '../../Components/SubscribePhoto'
 import Footer from '../../Components/Footer/Footer'
 import dataJson from '../../Data.json'
 import { Link } from 'react-router-dom'
+import ShopJsonSlide from './Shopjasonslide'
+import P5Slider from './Sliders/P5Silde'
 
 const ProductV5 = () => {
+
+    let slider;
+    const handlePrev = () => {
+        slider.slickPrev();
+    };
+
+    const handleNext = () => {
+        slider.slickNext();
+    };
+    const settings = {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+    };
     return (
         <>
             <div>
@@ -26,32 +42,10 @@ const ProductV5 = () => {
                 <section className='IMAGES-AND-DISCRIPTION mb-[100px]'>
                     <div className='container mx-auto'>
                         <div className='grid grid-cols-2 gap-10 py-[80px]'>
-                            <div className='main-div-photos '>
-                                <div className='flex justify-between items-center'>
-                                    <div className='hover:scale-110 duration-300'>
-                                        <a href="#" className='text-gray-500 '><i class="ri-arrow-left-line  bg-[#F6F7FB] p-4 rounded-md"></i></a>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <img className='rounded-lg' src="./src/assets/shop/p5/asset 3.png" alt="" />
-                                        </div>
-                                    </div>
-                                    <div className='hover:scale-110 duration-300'>
-                                        <a href="#" className='text-gray-500'><i class="ri-arrow-right-line bg-[#F6F7FB] p-4 rounded-md"></i></a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className='flex justify-center mt-10'>
-                                        <img className='rounded-full w-14 mx-3 ring-2 ring-[#417EF0]' src="./src/assets/shop/p5/asset 3.png" alt="" />
-                                        <img className='rounded-full w-14 mx-3 hover:ring-2 hover:ring-[#417EF0] duration-300' src="./src/assets/shop/p5/asset 4.png" alt="" />
-                                        <img className='rounded-full w-14 mx-3 hover:ring-2 hover:ring-[#417EF0] duration-300' src="./src/assets/shop/p5/asset 5.png" alt="" />
-                                        <img className='rounded-full w-14 mx-3 hover:ring-2 hover:ring-[#417EF0] duration-300' src="./src/assets/shop/p5/asset 6.png" alt="" />
-                                        <img className='rounded-full w-14 mx-3 hover:ring-2 hover:ring-[#417EF0] duration-300' src="./src/assets/shop/p5/asset 7.png" alt="" />
-                                        <img className='rounded-full w-14 mx-3 hover:ring-2 hover:ring-[#417EF0] duration-300' src="./src/assets/shop/p5/asset 8.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
 
+                            <div>
+                                <P5Slider />
+                            </div>
                             <div className='main-div-details '>
                                 <h1 className='font-bold text-4xl text-[#292930] tracking-wide mb-8'>Wooden Sofa Chair</h1>
                                 <div className='flex items-center mb-5'>
@@ -326,6 +320,10 @@ const ProductV5 = () => {
                     </div>
                 </section>
 
+                <section className=''>
+                    <ShopJsonSlide />
+                </section>
+                {/* 
                 <section className='JSONDATA'>
                     <div className=' pb-7'>
                         <div className='container mx-auto'>
@@ -411,7 +409,7 @@ const ProductV5 = () => {
 
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section className='SHOP-FOOTER'>
                     <SubscribePhoto />

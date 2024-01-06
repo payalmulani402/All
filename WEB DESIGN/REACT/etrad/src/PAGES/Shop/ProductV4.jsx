@@ -1,13 +1,46 @@
-import React from 'react'
-
+import React, { useReducer } from 'react'
 import { AllTopBar } from '../../Components/AllDropdown/AllDropdownHover'
 import { AllNavBar, NavBottom } from '../../Components/AllNavbar/AllNavBar'
 import SubscribePhoto from '../../Components/SubscribePhoto'
 import Footer from '../../Components/Footer/Footer'
-import dataJson from '../../Data.json'
 import { Link } from 'react-router-dom'
+import P4Slider from './Sliders/P4Slide'
+import ShopJsonSlide from './ShopJasonSlide'
+
 
 const ProductV4 = () => {
+
+    let slider;
+    const handlePrev = () => {
+        slider.slickPrev();
+    };
+
+    const handleNext = () => {
+        slider.slickNext();
+    };
+    const settings = {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+    };
+
+    const initialState = {
+        firstCounter: 1,
+    }
+    const reducer = (state, action) => {
+        switch (action.type) {
+
+            case 'inc1':
+                return { ...state, firstCounter: state.firstCounter + action.value }
+            case 'dec1':
+                return { ...state, firstCounter: state.firstCounter - action.value }
+
+            default:
+                return state;
+        }
+    }
+    const [count, dispatch] = useReducer(reducer, initialState);
     return (
         <>
             <div>
@@ -23,34 +56,14 @@ const ProductV4 = () => {
                     <NavBottom />
                 </section>
 
-                <section className='IMAGES-AND-DISCRIPTION bg-[#F9F3F0] mb-[100px]'>
+                <section className='IMAGES-AND-DISCRIPTION bg-[#F9F3F0] '>
                     <div className='container mx-auto'>
-                        <div className='grid grid-cols-2 gap-10 py-[80px] '>
-                            <div className='main-div-photos'>
-                                <div className='flex justify-between items-center'>
-                                    <div className='hover:scale-110 duration-300'>
-                                        <a href="#" className='text-gray-500 '><i class="ri-arrow-left-line  bg-[#F6F7FB] p-4 rounded-md"></i></a>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <img className='rounded-lg' src="./src/assets/shop/p4/asset 3.png" alt="" />
-                                        </div>
-                                    </div>
-                                    <div className='hover:scale-110 duration-300'>
-                                        <a href="#" className='text-gray-500'><i class="ri-arrow-right-line bg-[#F6F7FB] p-4 rounded-md"></i></a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className='flex justify-center mt-10'>
-                                        <img className='rounded-full w-14 mx-3 ring-2 ring-[#417EF0]' src="./src/assets/shop/p4/asset 13.png" alt="" />
-                                        <img className='rounded-full w-14 mx-3 hover:ring-2 hover:ring-[#417EF0] duration-300' src="./src/assets/shop/p4/asset 8.png" alt="" />
-                                        <img className='rounded-full w-14 mx-3 hover:ring-2 hover:ring-[#417EF0] duration-300' src="./src/assets/shop/p4/asset 9.png" alt="" />
-                                        <img className='rounded-full w-14 mx-3 hover:ring-2 hover:ring-[#417EF0] duration-300' src="./src/assets/shop/p4/asset 10.png" alt="" />
-                                        <img className='rounded-full w-14 mx-3 hover:ring-2 hover:ring-[#417EF0] duration-300' src="./src/assets/shop/p4/asset 11.png" alt="" />
-                                        <img className='rounded-full w-14 mx-3 hover:ring-2 hover:ring-[#417EF0] duration-300' src="./src/assets/shop/p4/asset 12.png" alt="" />
-                                    </div>
-                                </div>
+                        <div className='grid grid-cols-2 gap-20 py-[80px]'>
+
+                            <div>
+                                <P4Slider />
                             </div>
+
                             <div className='main-div-details '>
                                 <h1 className='font-bold text-4xl text-[#292930] tracking-wide mb-8'>Miles Weekender Bag</h1>
                                 <h1 className='font-semibold text-2xl text-[#292930] mb-5'>$155.00 - $255.00</h1>
@@ -90,14 +103,24 @@ const ProductV4 = () => {
                                         </ul>
                                     </div>
                                     <div className='flex justify-between items-center'>
-                                        <div className='flex items-center'>
-                                            <span className='bg-gray-100 py-[4px] px-[12px] rounded-full hover:ring-[#3577F0]  hover:ring-2 duration-300 cursor-pointer'>-</span>
-                                            <h1 className='font-semibold text-lg mx-5'>1</h1>
-                                            <span className='bg-gray-100 py-[4px] px-[10px] rounded-full hover:ring-[#3577F0]  hover:ring-2 duration-300 cursor-pointer'>+</span>
+                                        <div className='flex items-center '>
+                                            <button className='ring-white flex justify-center items-center h-7 w-7 bg-[#F6F7FB] rounded-full cursor-pointer hover:ring-[#3577F0]  hover:ring-2  text-black duration-300' onClick={() => {
+                                                if (count.firstCounter > 0) {
+                                                    dispatch({ type: 'dec1', value: 1 });
+                                                }
+                                            }}>
+                                                <i class="fa-solid fa-minus text-xs"></i>
+                                            </button>
+
+                                            <h1 className='font-semibold text-lg w-14 text-center'>{count.firstCounter}</h1>
+
+                                            <button className='ring-white flex justify-center items-center h-7 w-7 bg-[#F6F7FB] rounded-full cursor-pointer hover:ring-[#3577F0]  hover:ring-2 text-black duration-300 text-base' onClick={() => dispatch({ type: 'inc1', value: 1 })}>
+                                                <i class="fa-solid fa-plus text-xs"></i>
+                                            </button>
                                         </div>
                                         <div className='flex items-center'>
                                             <div className='mx-5'>
-                                                <Link to="/Cart" href="#" className='relative z-10 font-bold bg-[#3577F0] text-white px-32 py-5 rounded-md 
+                                                <Link to="/Cart" href="#" className='relative z-10 font-bold bg-[#3577F0] text-white px-28 py-5 rounded-md 
                                                 before:absolute
                                                 before:content-[""]
                                                 before:px-32
@@ -177,90 +200,7 @@ const ProductV4 = () => {
                 </section>
 
                 <section className='JSONDATA'>
-                    <div className=' pb-7'>
-                        <div className='container mx-auto'>
-                            <div className="flex justify-between ">
-                                <div className='mb-10'>
-                                    <p className="text-[#8C71DB] font-medium mb-2"><i class="ri-shopping-basket-2-line bg-[#8C71DB] p-1 text-white rounded-full text-center mr-3"></i>Your Recentls</p>
-                                    <h1 className="font-bold text-4xl text-[#292930]  tracking-wide">Viewed Items</h1>
-                                </div>
-                                <div className='text-gray-400 pt-10'>
-                                    <div className='hover:scale-110 duration-300 inline-block'>
-                                        <a href="#" className=''><i class="ri-arrow-left-line mr-2 bg-[#F6F7FB] p-4 rounded-md"></i></a>
-                                    </div>
-                                    <div className='hover:scale-110 duration-300 inline-block '>
-                                        <a href="#" className=''><i class="ri-arrow-right-line bg-[#F6F7FB] p-4 rounded-md"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='grid grid-cols-4 gap-10'>
-                                {
-                                    dataJson.slice(0, 4).map(Data => {
-                                        return (
-                                            <>
-                                                <div className='group mb-10'>
-                                                    <div className='relative overflow-hidden rounded-[35px]'>
-                                                        <div>
-                                                            <img className='w-96 h-96 object-cover group-hover:scale-110 duration-200' src={Data.image} alt="" />
-
-                                                            <div className=' absolute left-12 -bottom-3 group-hover:bottom-10 duration-700 opacity-0 group-hover:opacity-100'>
-                                                                <div className='flex justify-center'>
-                                                                    <div className='flex items-center'>
-                                                                        <div className='hover:scale-110 duration-300 inline-block'>
-                                                                            <Link to="/Wishlist" href="" className=''><i class="fa-regular fa-heart  bg-white p-3 rounded-[4px]"></i></Link>
-                                                                        </div>
-                                                                        <div className='mx-4'>
-                                                                            <Link to="/Cart" href="#" className=" px-7 py-3 z-10 bg-[#ff497c] text-white font-bold rounded-[4px] relative 
-                                                                                before:absolute
-                                                                                before:contetn-['']
-                                                                                before:px-10
-                                                                                before:py-5
-                                                                                before:bg-[#ff497c] 
-                                                                                before:left-0
-                                                                                before:top-0
-                                                                                before:right-0
-                                                                                before:bottom-0
-                                                                                before:rounded-[4px]
-                                                                                before:-z-10
-                                                                                before:hover:scale-110
-                                                                                before:duration-300">
-                                                                                Add to Cart</Link>
-                                                                        </div>
-                                                                        <div className='hover:scale-110 duration-300 inline-block '>
-                                                                            <a href="#" className=''><i class="fa-regular fa-eye bg-white p-3 rounded-[4px]"></i></a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className=''>
-                                                        <div className='mt-5'>
-                                                            <a className='text-gray-500 font-semibold tracking-wider hover:text-[#3577F0] duration-300 cursor-pointer'>{Data.name}</a>
-                                                        </div>
-                                                        <div className='flex text-xl font-bold mt-2'>
-                                                            <h1 className='text-[#292930] mr-3'>{Data.newprice}</h1>
-                                                            <del className='text-gray-300'>{Data.oldprice}</del>
-                                                        </div>
-                                                        <div>
-                                                            <ul className='flex items-center mt-5'>
-                                                                <li className='bg-[#AAE6F8] h-3 w-3 mr-2 rounded-full outline outline-2 outline-offset-4 outline-[#AAE6F8] cursor-pointer'></li>
-                                                                <li className='bg-[#5F8AF7] h-3 w-3 mx-2 rounded-full cursor-pointer'></li>
-                                                                <li className='bg-[#59C3C0] h-3 w-3 mx-2 rounded-full cursor-pointer'></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </>
-                                        )
-                                    })
-                                }
-                            </div>
-
-                        </div>
-                    </div>
+                    <ShopJsonSlide/>
                 </section>
 
                 <section className='SHOP-FOOTER'>
