@@ -6,9 +6,9 @@ import Listdata1 from './ListRender/Listdata1'
 const App = () => {
   return (
     <div>
-       <Listrender1/> 
+       {/* <Listrender1/>  */}
        {/* <Listrender2/> */}
-       {/* <Listdata1/> */}
+       <Listdata1/>
     </div>
   )
 }

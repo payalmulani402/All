@@ -206,15 +206,15 @@
 
 // --- javascript array method ---
 {
-    // const names = ['kishan','jeegar','sagar','anil'];
-    // const names2 = {person1:'kishan',person2:'jeegar',person3:'sagar'};
+    // const names = ['payal','krupali','ami','ankita'];
+    // const names2 = {person1:'payal',person2:'krupali',person3:'ami'};
     // console.log(names2.person1);
     // document.write=(names2.person1);
 }
 
 // {
 //     let user;
-//     user = kishan;
+//     user = payal;
 //     alert(user ?? "guest user")
 // }
 

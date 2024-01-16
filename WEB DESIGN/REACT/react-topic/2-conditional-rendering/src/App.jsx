@@ -1,8 +1,8 @@
-// import Practice from "./Render/Practice";
-// import Render1 from "./Render/Render1";
-// import Render2 from "./Render/Render2";
-// import Render3 from "./Render/Render3";
-// import Render4 from "./Render/Render4";
+import Practice from "./Render/Practice";
+import Render1 from "./Render/Render1";
+import Render2 from "./Render/Render2";
+import Render3 from "./Render/Render3";
+import Render4 from "./Render/Render4";
 // import Render5 from "./Render/Render5";
 // import Render6 from "./Render/Render6";
 // import Render7 from "./Render/Render7";

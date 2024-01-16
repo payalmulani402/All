@@ -38,7 +38,7 @@
 // but, code is executed at least once whether condition is true or false
 
 // do{
-//     code to be executed
+//     // code to be executed
 //      increment
 // }while (condition);
 
@@ -59,7 +59,7 @@
 // {
 //     for(initialization; condition: increment)
 //     {
-//         code to be executed
+//         // code to be executed
 //     }
 // }
 

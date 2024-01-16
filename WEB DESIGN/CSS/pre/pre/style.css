@@ -1,6 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
-*{box-sizing: border-box;}
+/* *{box-sizing: border-box;}
 body {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ p {
     margin: 0;
     padding: 0;
 
-}
+} */
 
 /* nav css start */
 /* .nav-item .nav-link {
@@ -281,8 +281,8 @@ p {
     width: 250px;
     height: auto;
     /* box-shadow: 3px 4px 5px 6px #000; */
-}
-.img-1-content{
+/* } */
+/* .img-1-content{
     position: absolute;
     bottom: 10%;
     color: white;
@@ -584,7 +584,6 @@ p {
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
 body {
     margin: 0;
@@ -645,10 +644,11 @@ p {
 
 }
 
-.Hero-section {
+.Hero-section .container {
     display: flex;
     align-items: center;
     padding: 50px 0px;
+    justify-content: center;
 }
 
 .img-section {
@@ -686,6 +686,7 @@ p {
 
 .service-section {
     display: flex;
+    justify-content: center;
     padding: 25px 90px;
     background-color: #FD4F56;
 
@@ -728,7 +729,7 @@ p {
 
 .box-section {
     display: flex;
-    
+    justify-content: center;
 }
 
 .box-1 {
@@ -764,6 +765,7 @@ p {
 
 .design-main-section {
     display: flex;
+    justify-content: center;
     background-color: #FD4F56;
 
 }
@@ -807,6 +809,7 @@ p {
 }
 .design-result{
     display: flex;
+    justify-content: center;
     height: auto;
     width: 350px;
     justify-content: space-between;
@@ -908,6 +911,7 @@ p {
 }
 .blog-image-section{
     display: flex;
+    justify-content: center;
 }
 .blog-1{
     position: relative;
@@ -1009,6 +1013,7 @@ p {
 
 .pro-flex-part{
     display: flex;
+    justify-content: center;
     margin-bottom: 10px;
 }
 .pro-left-part{
@@ -1043,7 +1048,7 @@ p {
 }
 .help-box-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .help-1{
@@ -1051,6 +1056,7 @@ p {
     text-align: center;
     padding:60px 100px ;
     border-radius: 8px;
+    margin: 0 15px;
 }
 .help-1 h1{
     font-size: 18px;
@@ -1071,7 +1077,7 @@ p {
 }
 .footer-main-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     border-bottom: 1px solid #fff;
     padding-bottom: 70px;

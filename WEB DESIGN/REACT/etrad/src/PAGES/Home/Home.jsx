@@ -55,8 +55,8 @@ const Home = () => {
 
                 <section className='HERO-SECTION bg-[#F9F3F0] h-[700px] relative overflow-hidden '>
                     <div className='BACKGROUND-IMG'>
-                        <img className='absolute right-[340px] -bottom-20' src="./src/assets/Home/asset 8.png" alt="" />
-                        <img className='absolute right-[40px] -bottom-12' src="./src/assets/Home/asset 9.png" alt="" />
+                        <img className='absolute right-[500px] -bottom-20' src="./src/assets/Home/asset 8.png" alt="" />
+                        <img className='absolute right-[100px] -bottom-12' src="./src/assets/Home/asset 9.png" alt="" />
                         <div className='absolute left-[45%] bottom-10'>
 
                         </div>
@@ -138,7 +138,7 @@ const Home = () => {
                                 before:duration-300">
                                         <i class="ri-shopping-cart-line mr-2"></i>Shop Now</Link>
                                 </div>
-
+                                
                                 <div className='flex ml-8'>
                                     <div className="IMAGES-CIRCLE">
                                         <ul className="flex">

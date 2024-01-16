@@ -47,49 +47,49 @@
 
 
 // using consol in javascript
-// {
-//     console.log("hello world");
-//     console.log("hello javascript");
-//     console.log("80");
-//     var a=50;
-// }
+{
+    console.log("hello world");
+    console.log("hello javascript");
+    console.log("80");
+    var a=50;
+}
 
 // javascript language case-sensitive
 // variable in javascript
-// {
-//     names="css"; 
-//     console.log(names);
-//     names="payal";
-//     console.log(names);
+{
+    names="css"; 
+    console.log(names);
+    names="payal";
+    console.log(names);
 
-//     var Names="website";
-//     var names="javascript";
-//     console.log(names);
+    var Names="website";
+    var names="javascript";
+    console.log(names);
 
-//     var thisis="50 ";
-//     var thatis="25";
-//     console.log(thisis + thatis);
+    var thisis="50 ";
+    var thatis="25";
+    console.log(thisis + thatis);
 
-//     var box1="colthes";
-//     var box1="toys";
-//     console.log(box1);
+    var box1="colthes";
+    var box1="toys";
+    console.log(box1);
 
-// }
+}
 // new html element add in though javascript
-// {
-//     var newelement=document.createElement("h6");
-//     newelement.textContent="bhalala kishan";
-//     document.body.appendChild(newelement); 
+{
+    var newelement=document.createElement("h6");
+    newelement.textContent="mulani payal";
+    document.body.appendChild(newelement); 
 
-//     var newelement=document.createElement("marquee");
-//     newelement.textContent="hello world";
-//     document.body.appendChild(newelement); 
+    var newelement=document.createElement("marquee");
+    newelement.textContent="hello world";
+    document.body.appendChild(newelement); 
 
-//     var newelement=document.createElement("p");
-//     newelement.textContent="kishan bhalala";
-//     document.body.appendChild(newelement); 
+    var newelement=document.createElement("p");
+    newelement.textContent="payal mulani";
+    document.body.appendChild(newelement); 
 
-// }
+}
 
 // window alert() in javascript
 // {
@@ -187,15 +187,15 @@
     // javascript variables are case sensitive,  for example x and x are differnt variables.
 
                                                                                      
-    function a(){
-        console.log("hello");
-    };
-    a();
+//     function a(){
+//         console.log("hello");
+//     };
+//     a();
     
-{
-    const student= {
-        firsname:'ram',
-        class:10
-    };
-    console.log(student.class)
-}
+// {
+//     const student= {
+//         firsname:'ram',
+//         class:10
+//     };
+//     console.log(student.class)
+// }

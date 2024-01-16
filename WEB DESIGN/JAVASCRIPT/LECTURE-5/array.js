@@ -32,7 +32,7 @@
 // let array = ["payal", "krupali", "vibhuti", "liza"];
 // console.log(array[2],array[2]);
 // }
-// 
+
 // {
 //     const array = [
 //         "one",
@@ -133,12 +133,19 @@
 //     console.log(a);
 // }
 
+{
+    const name = ["payal","pay","liza"];
+    console.log(name.length)
+    let a = tostring().length;
+    console.log(a);
+}
+
 // ---Array pop()--- 
 // {
 //     const cars = ["audi" , "BMW" , "jaguar", "innova"];
 //     document.getElementById("demo").innerHTML = cars;
 //     cars.pop();
-//     cars.pop();
+
 //     document.getElementById("demo-1").innerHTML = cars;
 // }
 
@@ -148,6 +155,7 @@
 //     document.getElementById("demo").innerHTML = cars.pop();
 //     document.getElementById("demo-1").innerHTML = cars;
 // }
+
 
 // ---Array push()--- 
 // {

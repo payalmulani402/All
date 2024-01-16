@@ -2,7 +2,7 @@ import React from 'react'
 
 const List = [
     'payal mulani',
-    'kirshana bhalala',
+    'vibhuti vavaliya',
     'daya bhalala',
     'komal kordiya',
     'kushi surani',

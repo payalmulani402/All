@@ -7,36 +7,36 @@
 }
 
 // 1.. if statement
-// {
-//     if(expression){
-//         statement(s) to be executed if expression is true
-//     }
-// }
-// {
-//     var age = "19";
-//     if (age >= 18) {
-//         document.write("<b>Qualifies for driving</b>");
-//     }
-// }
+{
+    if(expression){
+        // statement(s) to be executed if expression is true
+    }
+}
+{
+    var age = "19";
+    if (age >= 18) {
+        document.write("<b>Qualifies for driving</b>");
+    }
+}
 
 // 2.. if... else statement
-// {
-//     if (expression) {
-//         statement(s) to be executed if expression is true
-//     }
-//     else{
-//         statement(s) to be executed if expression is false
-//     }
-// }
-// {
-//     var age = "15";
-//     if (age >= 18) {
-//         document.write("<b>Qualifies for driving</b>");
-//     }
-//     else{
-//         document.write("<b>Qualifies not for driving</b>");
-//     }
-// }
+{
+    if (expression) {
+        // statement(s) to be executed if expression is true
+    }
+    else{
+        // statement(s) to be executed if expression is false
+    }
+}
+{
+    var age = "15";
+    if (age >= 18) {
+        document.write("<b>Qualifies for driving</b>");
+    }
+    else{
+        document.write("<b>Qualifies not for driving</b>");
+    }
+}
 
 // 3.. if... else if statement
 // the if... else if... statement is an advanced form of if else that allows
